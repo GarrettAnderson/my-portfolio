@@ -7,43 +7,42 @@ import toTheMoviesImg from '../images/toTheMoviesImg.png'
 import yogiMeImg from '../images/yogiMeImg.png'
 
 const projectImages = [
-  { id: 1, image: profileImg },
-  { id: 2, image: colorPickerImg },
-  { id: 3, image: bombSnifferImg },
-  { id: 4, image: toTheMoviesImg },
-  { id: 5, image: yogiMeImg }
+  { id: 1, source: colorPickerImg },
+  { id: 2, source: bombSnifferImg },
+  { id: 3, source: toTheMoviesImg },
+  { id: 4, source: yogiMeImg }
 ]
 
 class Homepage extends Component {
   render() {
-    // const formSchema = {
-    //   title: 'Contact Me',
-    //   type: 'object',
-    //   required: [ 'name' ],
-    //   properties: {
-    //     name: {
-    //       type: 'string',
-    //       title: 'Name',
-    //       default: ''
-    //     },
-    //     email: {
-    //       type: 'string',
-    //       title: 'Email',
-    //       default: ''
-    //     },
-    //     subject: {
-    //       type: 'string',
-    //       title: 'Subject',
-    //       default: ''
-    //     },
-    //     message: {
-    //       type: 'string',
-    //       format: 'textarea',
-    //       title: 'Message',
-    //       default: ''
-    //     }
-    //   }
-    // }
+    const formSchema = {
+      title: 'Contact Me',
+      type: 'object',
+      required: [ 'name' ],
+      properties: {
+        name: {
+          type: 'string',
+          title: 'Name',
+          default: ''
+        },
+        email: {
+          type: 'string',
+          title: 'Email',
+          default: ''
+        },
+        subject: {
+          type: 'string',
+          title: 'Subject',
+          default: ''
+        },
+        message: {
+          type: 'string',
+          format: 'textarea',
+          title: 'Message',
+          default: ''
+        }
+      }
+    }
     return (
       <div>
         <header>Garrett Anderson</header>
@@ -66,10 +65,9 @@ class Homepage extends Component {
           <section className="projects">
             <ol>
               {projectImages.map((image) => {
-                console.log(image)
                 return (
                   <li>
-                    <img src={image} />
+                    <img src={image.source} />
                   </li>
                 )
               })}
