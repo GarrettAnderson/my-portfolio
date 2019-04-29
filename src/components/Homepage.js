@@ -14,6 +14,10 @@ const projectImages = [
 ]
 
 class Homepage extends Component {
+  state = {
+    navShown: true
+  }
+
   render() {
     const formSchema = {
       title: <h3>Contact Me</h3>,
@@ -47,11 +51,20 @@ class Homepage extends Component {
       <div>
         <header>
           <img src={profileImg} alt="profile-image" />
-          <nav>
+          <button onClick={() => this.setState({ navShown: !this.state.navShown })}>
+            {this.state.navShown ? <i class="fas fa-bars" /> : <i class="fas fa-times" />}
+          </button>
+          <nav className={`nav-dropdown ${this.state.navShown ? 'is-shown' : ''} `}>
             <ol>
-              <li>Projects</li>
-              <li>About Me</li>
-              <li>Contact Me</li>
+              <li>
+                <a href="#favorite-projects">Projects</a>
+              </li>
+              <li>
+                <a href="#about-me">About Me</a>
+              </li>
+              <li>
+                <a href="#contact-me">Contact Me</a>
+              </li>
             </ol>
           </nav>
         </header>
@@ -67,7 +80,7 @@ class Homepage extends Component {
           </ol>
         </aside>
         <main>
-          <section className="projects">
+          <section className="projects" id="favorite-projects">
             <ol>
               {projectImages.map((image) => {
                 return (
@@ -78,11 +91,11 @@ class Homepage extends Component {
               })}
             </ol>
           </section>
-          <article>
+          <article id="about-me">
             <h3>About Me</h3>
             <p>Florida boy with a global mindset and a passion for building beautiful things.</p>
           </article>
-          <section className="contact-form">
+          <section className="contact-form" id="contact-me">
             <Form schema={formSchema} onSubmit={this.onSubmitEdit} className="edit-contact-form" />
           </section>
         </main>
