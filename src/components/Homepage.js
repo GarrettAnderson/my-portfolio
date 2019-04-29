@@ -4,13 +4,13 @@ import profileImg from '../images/headshot.jpg'
 import colorPickerImg from '../images/colorPickerImg.png'
 import bombSnifferImg from '../images/bombSnifferImg.png'
 import toTheMoviesImg from '../images/toTheMoviesImg.png'
-import yogiMeImg from '../images/yogiMeImg.png'
+import capstoneYogiMe from '../images/capstoneYogiMe.png'
 
 const projectImages = [
   { id: 1, source: colorPickerImg },
   { id: 2, source: bombSnifferImg },
   { id: 3, source: toTheMoviesImg },
-  { id: 4, source: yogiMeImg }
+  { id: 4, source: capstoneYogiMe }
 ]
 
 class Homepage extends Component {
