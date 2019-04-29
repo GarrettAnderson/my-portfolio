@@ -6,36 +6,44 @@ import bombSnifferImg from '../images/bombSnifferImg.png'
 import toTheMoviesImg from '../images/toTheMoviesImg.png'
 import yogiMeImg from '../images/yogiMeImg.png'
 
+const projectImages = [
+  { id: 1, image: profileImg },
+  { id: 2, image: colorPickerImg },
+  { id: 3, image: bombSnifferImg },
+  { id: 4, image: toTheMoviesImg },
+  { id: 5, image: yogiMeImg }
+]
+
 class Homepage extends Component {
   render() {
-    const formSchema = {
-      title: 'Contact Me',
-      type: 'object',
-      required: [ 'name' ],
-      properties: {
-        name: {
-          type: 'string',
-          title: 'Name',
-          default: ''
-        },
-        email: {
-          type: 'string',
-          title: 'Email',
-          default: ''
-        },
-        subject: {
-          type: 'string',
-          title: 'Subject',
-          default: ''
-        },
-        message: {
-          type: 'string',
-          format: 'textarea',
-          title: 'Message',
-          default: ''
-        }
-      }
-    }
+    // const formSchema = {
+    //   title: 'Contact Me',
+    //   type: 'object',
+    //   required: [ 'name' ],
+    //   properties: {
+    //     name: {
+    //       type: 'string',
+    //       title: 'Name',
+    //       default: ''
+    //     },
+    //     email: {
+    //       type: 'string',
+    //       title: 'Email',
+    //       default: ''
+    //     },
+    //     subject: {
+    //       type: 'string',
+    //       title: 'Subject',
+    //       default: ''
+    //     },
+    //     message: {
+    //       type: 'string',
+    //       format: 'textarea',
+    //       title: 'Message',
+    //       default: ''
+    //     }
+    //   }
+    // }
     return (
       <div>
         <header>Garrett Anderson</header>
@@ -53,32 +61,31 @@ class Homepage extends Component {
         <main>
           <article>
             <header>About Me</header>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-              mollit anim id est laborum.
-            </p>
+            <p>I'm Florida boy with a global mind-set and a passion for building beautiful things.</p>
           </article>
           <section className="projects">
             <ol>
-              <li>
-                <img src={colorPickerImg} />
-              </li>
-              <li>
-                <img src={bombSnifferImg} />
-              </li>
-              <li>
-                <img src={toTheMoviesImg} />
-              </li>
-              <li>
-                <img src={yogiMeImg} />
-              </li>
+              {projectImages.map((image) => {
+                console.log(image)
+                return (
+                  <li>
+                    <img src={image} />
+                  </li>
+                )
+              })}
             </ol>
           </section>
           <section className="contact-form">
-            <Form schema={formSchema} onSubmit={this.onSubmitEdit} className="edit-contact-form" />
+            <form
+              method="POST"
+              action="https://formspree.io/https://formspree.io/garrettleegrahamanderson@gmail.com.tld"
+            >
+              <input type="email" name="email" placeholder="Email" />
+              <input type="text" name="subject" placeholder="Subject" />
+              <textarea name="message" placeholder="Message" />
+              <button type="submit" />
+            </form>
+            {/* <Form schema={formSchema} onSubmit={this.onSubmitEdit} className="edit-contact-form" /> */}
           </section>
         </main>
         <footer>Made with 💛by Garrett Lee Graham Anderson</footer>
