@@ -45,48 +45,67 @@ class Homepage extends Component {
     }
     return (
       <div>
-        <header>Garrett Anderson</header>
+        <header>
+          <img src={profileImg} alt="profile-image" />
+          <nav>
+            <ol>
+              <li>Projects</li>
+              <li>About Me</li>
+              <li>Contact Me</li>
+            </ol>
+          </nav>
+        </header>
         <aside>
           <figure>
             <img src={profileImg} alt="profile-image" />
             <figcaption>Garrett Lee Graham Anderson</figcaption>
           </figure>
           <ol>
-            <li>About Me</li>
             <li>Projects</li>
+            <li>About Me</li>
             <li>Contact Me</li>
           </ol>
         </aside>
         <main>
-          <article>
-            <header>About Me</header>
-            <p>I'm Florida boy with a global mind-set and a passion for building beautiful things.</p>
-          </article>
           <section className="projects">
             <ol>
               {projectImages.map((image) => {
                 return (
-                  <li>
+                  <li key={image.id}>
                     <img src={image.source} />
                   </li>
                 )
               })}
             </ol>
           </section>
+          <article>
+            <header>About Me</header>
+            <p>I'm a Florida boy with a global mind-set and a passion for building beautiful things.</p>
+          </article>
           <section className="contact-form">
-            <form
-              method="POST"
-              action="https://formspree.io/https://formspree.io/garrettleegrahamanderson@gmail.com.tld"
-            >
-              <input type="email" name="email" placeholder="Email" />
-              <input type="text" name="subject" placeholder="Subject" />
-              <textarea name="message" placeholder="Message" />
-              <button type="submit" />
-            </form>
-            {/* <Form schema={formSchema} onSubmit={this.onSubmitEdit} className="edit-contact-form" /> */}
+            <Form schema={formSchema} onSubmit={this.onSubmitEdit} className="edit-contact-form" />
           </section>
         </main>
-        <footer>Made with 💛by Garrett Lee Graham Anderson</footer>
+        <footer>
+          Made with 💛by Garrett Lee Graham Anderson
+          <ol>
+            <li>
+              <a href="https://github.com/GarrettAnderson">
+                <i class="fab fa-github" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/garrettleegrahamanderson/">
+                <i class="fab fa-linkedin-in" />
+              </a>
+            </li>
+            <li>
+              <a href="https://medium.com/@garrettleegrahamanderson">
+                <i class="fab fa-medium-m" />
+              </a>
+            </li>
+          </ol>
+        </footer>
       </div>
     )
   }
