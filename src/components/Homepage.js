@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Form from 'react-jsonschema-form'
 import profileImg from '../images/headshot.jpg'
 import colorPickerImg from '../images/colorPickerImg.png'
 import bombSnifferImg from '../images/bombSnifferImg.png'
@@ -50,6 +51,16 @@ class Homepage extends Component {
           </ol>
         </aside>
         <main>
+          <article>
+            <header>About Me</header>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+              mollit anim id est laborum.
+            </p>
+          </article>
           <section className="projects">
             <ol>
               <li>
@@ -70,6 +81,7 @@ class Homepage extends Component {
             <Form schema={formSchema} onSubmit={this.onSubmitEdit} className="edit-contact-form" />
           </section>
         </main>
+        <footer>Made with 💛by Garrett Lee Graham Anderson</footer>
       </div>
     )
   }
