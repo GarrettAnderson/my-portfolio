@@ -15,6 +15,10 @@ aside {
   display: none;
 }
 
+ol {
+  list-style: none;
+}
+
 header img {
   width: 13rem;
   height: 12rem;

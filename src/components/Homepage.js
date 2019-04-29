@@ -16,7 +16,7 @@ const projectImages = [
 class Homepage extends Component {
   render() {
     const formSchema = {
-      title: 'Contact Me',
+      title: <h3>Contact Me</h3>,
       type: 'object',
       required: [ 'name' ],
       properties: {
@@ -79,8 +79,8 @@ class Homepage extends Component {
             </ol>
           </section>
           <article>
-            <header>About Me</header>
-            <p>I'm a Florida boy with a global mind-set and a passion for building beautiful things.</p>
+            <h3>About Me</h3>
+            <p>Florida boy with a global mindset and a passion for building beautiful things.</p>
           </article>
           <section className="contact-form">
             <Form schema={formSchema} onSubmit={this.onSubmitEdit} className="edit-contact-form" />
