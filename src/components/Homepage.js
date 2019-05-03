@@ -20,7 +20,7 @@ class Homepage extends Component {
 
   render() {
     const formSchema = {
-      title: 'Contact Me',
+      title: '',
       type: 'object',
       required: [ 'name' ],
       properties: {
@@ -50,25 +50,22 @@ class Homepage extends Component {
     return (
       <div>
         <header>
-          <img src={profileImg} alt="profile-image" className="profile-image" />
-          <section className="nav-container">
-            <button className="nav-icon" onClick={() => this.setState({ navShown: !this.state.navShown })}>
-              {this.state.navShown == true ? <i className="fas fa-times" /> : <i className="fas fa-bars" />}
-            </button>
-            <nav className={`nav-dropdown ${this.state.navShown ? 'is-shown' : ''} `}>
-              <ol>
-                <li>
-                  <a href="#favorite-projects">Projects</a>
-                </li>
-                <li>
-                  <a href="#about-me">About Me</a>
-                </li>
-                <li>
-                  <a href="#contact-me">Contact Me</a>
-                </li>
-              </ol>
-            </nav>
+          <section className="image-container">
+            <img src={profileImg} alt="profile-image" className="profile-image" />
           </section>
+          <nav className="navbar">
+            <ol>
+              <li>
+                <a href="#favorite-projects">Projects</a>
+              </li>
+              <li>
+                <a href="#about-me">About Me</a>
+              </li>
+              <li>
+                <a href="#contact-me">Contact Me</a>
+              </li>
+            </ol>
+          </nav>
         </header>
         <aside>
           <figure>
@@ -83,6 +80,7 @@ class Homepage extends Component {
         </aside>
         <main>
           <section className="projects" id="favorite-projects">
+            <h3>Projects</h3>
             <ol>
               {projectImages.map((image) => {
                 return (
@@ -94,10 +92,11 @@ class Homepage extends Component {
             </ol>
           </section>
           <article id="about-me">
-            <h3>About Me</h3>
+            <h3>About</h3>
             <p>Florida boy with a global mindset and a passion for building beautiful things.</p>
           </article>
           <section className="contact-form" id="contact-me">
+            <h3>Contact</h3>
             <Form schema={formSchema} onSubmit={this.onSubmitEdit} className="edit-contact-form" />
           </section>
         </main>

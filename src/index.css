@@ -17,6 +17,17 @@ aside {
 
 ol {
   list-style: none;
+  padding: 0;
+}
+
+h3 {
+  text-align: center;
+}
+
+section.image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
 }
 
 .profile-image {
@@ -25,19 +36,39 @@ ol {
   border-radius: 50%;
 }
 
-.nav-dropdown {
-  display: none;
-}
-
-.nav-dropdown.is-shown {
+nav.navbar {
   display: flex;
-}
-
-.projects img {
-  width: 35rem;
+  flex-direction: column;
   border: 3px solid black;
 }
 
+nav.navbar ol {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.projects li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.projects img {
+  width: 90%;
+  border: 3px solid black;
+}
+
+footer {
+  text-align: center;
+}
+
+footer ol {
+  display: flex;
+  justify-content: space-around;
+}
 /* FOR CARD FLIP FEATURE - Click project image and it turns to show the project details
 .scene {
   perspective: 600px;
