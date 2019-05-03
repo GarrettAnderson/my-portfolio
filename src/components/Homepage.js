@@ -50,23 +50,25 @@ class Homepage extends Component {
     return (
       <div>
         <header>
-          <img src={profileImg} alt="profile-image" />
-          <button className="nav-icon" onClick={() => this.setState({ navShown: !this.state.navShown })}>
-            {this.state.navShown == true ? <i className="fas fa-times" /> : <i className="fas fa-bars" />}
-          </button>
-          <nav className={`nav-dropdown ${this.state.navShown ? 'is-shown' : ''} `}>
-            <ol>
-              <li>
-                <a href="#favorite-projects">Projects</a>
-              </li>
-              <li>
-                <a href="#about-me">About Me</a>
-              </li>
-              <li>
-                <a href="#contact-me">Contact Me</a>
-              </li>
-            </ol>
-          </nav>
+          <img src={profileImg} alt="profile-image" className="profile-image" />
+          <section className="nav-container">
+            <button className="nav-icon" onClick={() => this.setState({ navShown: !this.state.navShown })}>
+              {this.state.navShown == true ? <i className="fas fa-times" /> : <i className="fas fa-bars" />}
+            </button>
+            <nav className={`nav-dropdown ${this.state.navShown ? 'is-shown' : ''} `}>
+              <ol>
+                <li>
+                  <a href="#favorite-projects">Projects</a>
+                </li>
+                <li>
+                  <a href="#about-me">About Me</a>
+                </li>
+                <li>
+                  <a href="#contact-me">Contact Me</a>
+                </li>
+              </ol>
+            </nav>
+          </section>
         </header>
         <aside>
           <figure>

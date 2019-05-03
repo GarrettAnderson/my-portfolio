@@ -19,7 +19,7 @@ ol {
   list-style: none;
 }
 
-header img {
+.profile-image {
   width: 13rem;
   height: 12rem;
   border-radius: 50%;
