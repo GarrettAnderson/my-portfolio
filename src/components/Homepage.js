@@ -15,12 +15,12 @@ const projectImages = [
 
 class Homepage extends Component {
   state = {
-    navShown: true
+    navShown: false
   }
 
   render() {
     const formSchema = {
-      title: <h3>Contact Me</h3>,
+      title: 'Contact Me',
       type: 'object',
       required: [ 'name' ],
       properties: {
@@ -51,8 +51,8 @@ class Homepage extends Component {
       <div>
         <header>
           <img src={profileImg} alt="profile-image" />
-          <button onClick={() => this.setState({ navShown: !this.state.navShown })}>
-            {this.state.navShown ? <i class="fas fa-bars" /> : <i class="fas fa-times" />}
+          <button className="nav-icon" onClick={() => this.setState({ navShown: !this.state.navShown })}>
+            {this.state.navShown == true ? <i className="fas fa-times" /> : <i className="fas fa-bars" />}
           </button>
           <nav className={`nav-dropdown ${this.state.navShown ? 'is-shown' : ''} `}>
             <ol>
@@ -104,17 +104,17 @@ class Homepage extends Component {
           <ol>
             <li>
               <a href="https://github.com/GarrettAnderson">
-                <i class="fab fa-github" />
+                <i className="fab fa-github" />
               </a>
             </li>
             <li>
               <a href="https://www.linkedin.com/in/garrettleegrahamanderson/">
-                <i class="fab fa-linkedin-in" />
+                <i className="fab fa-linkedin-in" />
               </a>
             </li>
             <li>
               <a href="https://medium.com/@garrettleegrahamanderson">
-                <i class="fab fa-medium-m" />
+                <i className="fab fa-medium-m" />
               </a>
             </li>
           </ol>

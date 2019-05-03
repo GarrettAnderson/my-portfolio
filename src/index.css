@@ -25,6 +25,14 @@ header img {
   border-radius: 50%;
 }
 
+.nav-dropdown {
+  display: none;
+}
+
+.nav-dropdown.is-shown {
+  display: flex;
+}
+
 .projects img {
   width: 35rem;
   border: 3px solid black;
