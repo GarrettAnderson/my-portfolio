@@ -24,6 +24,10 @@ h3 {
   text-align: center;
 }
 
+.main-container {
+  width: 100%;
+}
+
 section.image-container {
   display: flex;
   justify-content: center;

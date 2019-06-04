@@ -48,7 +48,7 @@ class Homepage extends Component {
       }
     }
     return (
-      <div>
+      <div className="main-container">
         <header>
           <section className="image-container">
             <img src={profileImg} alt="profile-image" className="profile-image" />
