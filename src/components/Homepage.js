@@ -67,6 +67,7 @@ class Homepage extends Component {
             </ol>
           </nav>
         </header>
+        {/* The aside is to become visible on larger viewports
         <aside>
           <figure>
             <img src={profileImg} alt="profile-image" />
@@ -77,7 +78,7 @@ class Homepage extends Component {
             <li>About</li>
             <li>Contact</li>
           </ol>
-        </aside>
+        </aside> */}
         <main>
           <section className="projects" id="favorite-projects">
             <h3>Projects</h3>
