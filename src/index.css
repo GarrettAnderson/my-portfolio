@@ -28,10 +28,16 @@ h3 {
   width: 100%;
 }
 
-section.image-container {
+.profile-img-container {
   display: flex;
   justify-content: center;
-  margin-bottom: 1rem;
+  margin: 1rem;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .profile-image {
@@ -40,15 +46,16 @@ section.image-container {
   border-radius: 50%;
 }
 
-nav.navbar {
-  display: flex;
-  flex-direction: column;
-  border: 3px solid black;
+.navbar {
+  padding-left: 0;
+  padding-right: 0;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
 }
 
-nav.navbar ol {
+.navbar ol {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 100%;
   margin-bottom: 0;
 }
@@ -63,6 +70,8 @@ nav.navbar ol {
 .projects img {
   width: 90%;
   border: 3px solid black;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 footer {

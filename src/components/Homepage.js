@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Form from 'react-jsonschema-form'
-import profileImg from '../images/headshot.jpg'
+import profileImg from '../images/cropHeadShot.png'
 import colorPickerImg from '../images/colorPickerImg.png'
 import bombSnifferImg from '../images/bombSnifferImg.png'
 import toTheMoviesImg from '../images/toTheMoviesImg.png'
@@ -50,7 +50,7 @@ class Homepage extends Component {
     return (
       <div className="main-container">
         <header>
-          <section className="image-container">
+          <section className="profile-img-container">
             <img src={profileImg} alt="profile-image" className="profile-image" />
           </section>
           <nav className="navbar">
@@ -59,10 +59,10 @@ class Homepage extends Component {
                 <a href="#favorite-projects">Projects</a>
               </li>
               <li>
-                <a href="#about-me">About Me</a>
+                <a href="#about-me">About</a>
               </li>
               <li>
-                <a href="#contact-me">Contact Me</a>
+                <a href="#contact-me">Contact</a>
               </li>
             </ol>
           </nav>
@@ -74,8 +74,8 @@ class Homepage extends Component {
           </figure>
           <ol>
             <li>Projects</li>
-            <li>About Me</li>
-            <li>Contact Me</li>
+            <li>About</li>
+            <li>Contact</li>
           </ol>
         </aside>
         <main>
