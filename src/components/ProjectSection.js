@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import colorPickerImg from '../images/colorPickerImg.png'
 import bombSnifferImg from '../images/bombSnifferImg.png'
 import toTheMoviesImg from '../images/toTheMoviesImg.png'
 import capstoneYogiMe from '../images/capstoneYogiMe.png'
-import ProjectImage from '../components/ProjectImage'
 
 const projectImages = [
   { id: 1, source: colorPickerImg },
@@ -15,15 +15,18 @@ const projectImages = [
 class ProjectSection extends Component {
   render() {
     return (
-      <section className="projects" id="favorite-projects">
-        <h3>Projects</h3>
-        <ol>
-          {projectImages.map((image) => {
-            console.log(image)
-            return <ProjectImage key={image.id} id={image.id} src={image.source} />
-          })}
-        </ol>
-      </section>
+      <ol>
+        {projectImages.map((image) => {
+          console.log(image)
+          return (
+            <li key={this.props.id}>
+              <Link to={`/projects/${image.id}`}>
+                <img alt="project" src={image.source} />
+              </Link>
+            </li>
+          )
+        })}
+      </ol>
     )
   }
 }

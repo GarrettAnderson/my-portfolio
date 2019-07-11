@@ -9,7 +9,7 @@ class ProjectDetails extends Component {
   render() {
     return (
       <section>
-        <p>THIS IS THE PROJECT DETAILS SCREEN</p>
+        <img alt="project-image" src={this.props.src} />
       </section>
     )
   }
