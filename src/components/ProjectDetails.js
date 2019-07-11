@@ -1,6 +1,4 @@
 import React, { Component } from 'react'
-import ProjectSection from '../components/ProjectSection'
-import ProjectImage from '../components/ProjectImage'
 
 class ProjectDetails extends Component {
   state = {
@@ -9,6 +7,7 @@ class ProjectDetails extends Component {
   render() {
     return (
       <section>
+        <h1>{this.props.name}</h1>
         <img alt="project-image" src={this.props.src} />
       </section>
     )
