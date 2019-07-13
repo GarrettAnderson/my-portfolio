@@ -1,21 +1,31 @@
 import React, { Component } from 'react'
-import ProjectSection from '../components/ProjectSection'
-import colorPickerImg from '../images/colorPickerImg.png'
-import bombSnifferImg from '../images/bombSnifferImg.png'
-import toTheMoviesImg from '../images/toTheMoviesImg.png'
-import capstoneYogiMe from '../images/capstoneYogiMe.png'
+import axios from 'axios'
+import data from '../data/projects.json'
 
 class ProjectPage extends Component {
   state = {
+    // projects: [
+    //   { id: 1, source: colorPickerImg, name: 'Color Picker' },
+    //   { id: 2, source: bombSnifferImg, name: 'Minesweeper' },
+    //   { id: 3, source: toTheMoviesImg, name: 'To The Movies' },
+    //   { id: 4, source: capstoneYogiMe, name: 'Yogi Me' }
+    // ],
     project: {}
   }
 
   componentDidMount() {
-    console.log(this.props)
+    console.log('page load')
+    axios.get('../data/projects.json').then((response) => {
+      console.log(response)
+    })
   }
 
   render() {
-    return <div />
+    return (
+      <section>
+        <h1>{this.state.project.name}</h1>
+      </section>
+    )
   }
 }
 

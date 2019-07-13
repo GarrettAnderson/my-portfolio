@@ -1,6 +1,22 @@
 [
-  { "id": 1, "source": colorPickerImg, name: 'Color Picker' },
-  { "id": 2, "source": bombSnifferImg, name: 'Minesweeper' },
-  { "id": 3, "source": toTheMoviesImg, name: 'To The Movies' },
-  { "id": 4, "source": capstoneYogiMe, name: 'Yogi Me' }
+  {
+    "id": 1,
+    "source": "../images/colorPickerImg.png",
+    "name": "Color Picker"
+  },
+  {
+    "id": 2,
+    "source": "../images/bombSnifferImg.png",
+    "name": "Minesweeper"
+  },
+  {
+    "id": 3,
+    "source": "../images/toTheMoviesImg.png",
+    "name": "To The Movies"
+  },
+  {
+    "id": 4,
+    "source": "../images/capstoneYogiMe.png",
+    "name": "Yogi Me"
+  }
 ]

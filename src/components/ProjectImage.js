@@ -7,19 +7,15 @@ import capstoneYogiMe from '../images/capstoneYogiMe.png'
 
 class ProjectImage extends Component {
   state = {
-    projects: [
-      { id: 1, source: colorPickerImg, name: 'Color Picker' },
-      { id: 2, source: bombSnifferImg, name: 'Minesweeper' },
-      { id: 3, source: toTheMoviesImg, name: 'To The Movies' },
-      { id: 4, source: capstoneYogiMe, name: 'Yogi Me' }
-    ]
+    projects: []
   }
 
   render() {
     return (
       <li key={this.props.id}>
-        <Link to={`/projects/${this.props.id}`}>
+        <Link to={`/project/${this.props.id}`}>
           <img alt="project" src={this.props.src} />
+          <h1>{this.props.name}</h1>
         </Link>
       </li>
     )
