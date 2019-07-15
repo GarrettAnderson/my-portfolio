@@ -1,52 +1,19 @@
 import React, { Component } from 'react'
 import profileImg from '../images/cropHeadShot.png'
-import ProjectSection from '../components/ProjectSection'
-import colorPickerImg from '../images/colorPickerImg.png'
-import bombSnifferImg from '../images/bombSnifferImg.png'
-import toTheMoviesImg from '../images/toTheMoviesImg.png'
-import capstoneYogiMe from '../images/capstoneYogiMe.png'
-
-const projectImages = [
-  { id: 1, source: colorPickerImg },
-  { id: 2, source: bombSnifferImg },
-  { id: 3, source: toTheMoviesImg },
-  { id: 4, source: capstoneYogiMe }
-]
+import data from '../data/projects.json'
+import { Link } from 'react-router-dom'
 
 class Homepage extends Component {
   state = {
-    navShown: false
+    projects: []
+  }
+
+  componentDidMount() {
+    console.log(data)
+    this.setState({ projects: data })
   }
 
   render() {
-    const formSchema = {
-      title: '',
-      type: 'object',
-      required: [ 'name' ],
-      properties: {
-        name: {
-          type: 'string',
-          title: 'Name',
-          default: ''
-        },
-        email: {
-          type: 'string',
-          title: 'Email',
-          default: ''
-        },
-        subject: {
-          type: 'string',
-          title: 'Subject',
-          default: ''
-        },
-        message: {
-          type: 'string',
-          format: 'textarea',
-          title: 'Message',
-          default: ''
-        }
-      }
-    }
     return (
       <div className="main-container">
         <header>
@@ -67,22 +34,22 @@ class Homepage extends Component {
             </ol>
           </nav>
         </header>
-        {/* The aside is to become visible on larger viewports
-        <aside>
-          <figure>
-            <img src={profileImg} alt="profile-image" />
-            <figcaption>Garrett Lee Graham Anderson</figcaption>
-          </figure>
-          <ol>
-            <li>Projects</li>
-            <li>About</li>
-            <li>Contact</li>
-          </ol>
-        </aside> */}
         <main>
           <section className="projects" id="favorite-projects">
             <h3>Projects</h3>
-            <ProjectSection />
+            <ol>
+              {this.state.projects.map((image) => {
+                console.log(image)
+                return (
+                  <li key={image.id}>
+                    <Link to={`/project/${image.id}`}>
+                      <img alt="project" src={image.source} id={image.id} />
+                      <h3>{image.name}</h3>
+                    </Link>
+                  </li>
+                )
+              })}
+            </ol>
           </section>
           <article id="about-me">
             <h3>About</h3>

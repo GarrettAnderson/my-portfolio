@@ -16,7 +16,7 @@ class ProjectPage extends Component {
   }
 
   componentDidMount() {
-    console.log()
+    console.log(this.state.projects)
   }
 
   render() {
