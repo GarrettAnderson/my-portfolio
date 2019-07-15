@@ -1,9 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import colorPickerImg from '../images/colorPickerImg.png'
-import bombSnifferImg from '../images/bombSnifferImg.png'
-import toTheMoviesImg from '../images/toTheMoviesImg.png'
-import capstoneYogiMe from '../images/capstoneYogiMe.png'
+import data from '../data/projects.json'
 
 class ProjectImage extends Component {
   state = {
@@ -11,10 +8,11 @@ class ProjectImage extends Component {
   }
 
   render() {
+    console.log(data)
     return (
       <li key={this.props.id}>
+        <img alt="project" src={this.props.url} />
         <Link to={`/project/${this.props.id}`}>
-          <img alt="project" src={this.props.src} />
           <h1>{this.props.name}</h1>
         </Link>
       </li>

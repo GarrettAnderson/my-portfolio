@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Form from 'react-jsonschema-form'
 import profileImg from '../images/cropHeadShot.png'
 import ProjectSection from '../components/ProjectSection'
 import colorPickerImg from '../images/colorPickerImg.png'
@@ -91,7 +90,11 @@ class Homepage extends Component {
           </article>
           <section className="contact-form" id="contact-me">
             <h3>Contact</h3>
-            <Form schema={formSchema} onSubmit={this.onSubmitEdit} className="edit-contact-form" />
+            <form action="https://formspree.io/garrettleegrahamanderson@gmail.tld" method="POST">
+              <input type="text" name="name" />
+              <input type="text" name="_replyto" />
+              <input type="submit" value="send" />
+            </form>
           </section>
         </main>
         <footer>
