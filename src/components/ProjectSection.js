@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import ProjectImage from '../components/ProjectImage'
-import data from '../data/projects.json'
+// import data from '../data/projects.json'
 import colorPickerImg from '../images/colorPickerImg.png'
 import bombSnifferImg from '../images/bombSnifferImg.png'
 import toTheMoviesImg from '../images/toTheMoviesImg.png'
