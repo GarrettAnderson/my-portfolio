@@ -2,7 +2,7 @@
   {
     "id": 1,
     "source": "https://i.ibb.co/PmY6MWs/Color-Picker-Img.png",
-    "name": "Color Picker"
+    "name": "Colors"
   },
   {
     "id": 2,
@@ -12,11 +12,11 @@
   {
     "id": 3,
     "source": "https://i.ibb.co/vmg6VGX/to-The-Movies-Img.png",
-    "name": "To The Movies"
+    "name": "Movies"
   },
   {
     "id": 4,
-    "source": "https://i.ibb.co/vmg6VGX/to-The-Movies-Img.png",
-    "name": "Yogi Me"
+    "source": "https://i.ibb.co/p1TY9D7/capstone-Yogi-Me.png",
+    "name": "YogiMe"
   }
 ]

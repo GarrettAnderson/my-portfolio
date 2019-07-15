@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import profileImg from '../images/cropHeadShot.png'
 import data from '../data/projects.json'
-import { Link } from 'react-router-dom'
 
 class Homepage extends Component {
   state = {
@@ -42,7 +42,7 @@ class Homepage extends Component {
                 console.log(image)
                 return (
                   <li key={image.id}>
-                    <Link to={`/project/${image.id}`}>
+                    <Link to={`/${image.name}`}>
                       <img alt="project" src={image.source} id={image.id} />
                       <h3>{image.name}</h3>
                     </Link>
