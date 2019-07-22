@@ -75,6 +75,10 @@ h3 {
   border-bottom-right-radius: 15px;
 }
 
+.project-details img {
+  width: 22rem;
+}
+
 footer {
   text-align: center;
 }

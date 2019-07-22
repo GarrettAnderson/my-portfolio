@@ -1,30 +1,30 @@
 [
   {
-    "id": 1,
+    "id": 0,
     "source": "https://i.ibb.co/PmY6MWs/Color-Picker-Img.png",
-    "name": "Colors",
+    "name": "Color Picker",
     "github": "https://github.com/GarrettAnderson/color-picker",
     "live": "https://color-picker-garrettanderson.netlify.com",
     "description": "This is a description of the project including tech stack used."
   },
   {
-    "id": 2,
+    "id": 1,
     "source": "https://i.ibb.co/vhQ4zhC/Bomb-Sniffer.png",
-    "name": "Minesweeper",
+    "name": "Bomb Sniffer",
     "github": "https://github.com/GarrettAnderson/bomb-sniffer",
     "live": "https://bomb-sniffer-garrettanderson.netlify.com/",
     "description": "This is a description of the project including tech stack used."
   },
   {
-    "id": 3,
+    "id": 2,
     "source": "https://i.ibb.co/vmg6VGX/to-The-Movies-Img.png",
-    "name": "To The Movies",
+    "name": "To the Movies",
     "github": "https://github.com/GarrettAnderson/to-the-movies",
     "live": "https://to-the-movies-garrettanderson.netlify.com",
     "description": "This is a description of the project including tech stack used."
   },
   {
-    "id": 4,
+    "id": 3,
     "source": "https://i.ibb.co/p1TY9D7/capstone-Yogi-Me.png",
     "name": "Yogi Me",
     "github": "https://github.com/GarrettAnderson/capstone",

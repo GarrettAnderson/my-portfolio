@@ -16,7 +16,10 @@ class ProjectPage extends Component {
 
   render() {
     return (
-      <section>
+      <section class="project-details">
+        <nav>
+          <a href="/">Back</a>
+        </nav>
         <h1>{this.state.project.name}</h1>
         <img src={this.state.project.source} alt={`${this.state.project.name}` + ' Image'} />
         <p>{this.state.project.description}</p>
