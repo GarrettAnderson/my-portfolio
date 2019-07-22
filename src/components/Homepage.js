@@ -42,7 +42,7 @@ class Homepage extends Component {
                 console.log(image)
                 return (
                   <li key={image.id}>
-                    <Link to={`/${image.name}`}>
+                    <Link to={`/${image.id}`}>
                       <img alt="project" src={image.source} id={image.id} />
                       <h3>{image.name}</h3>
                     </Link>
