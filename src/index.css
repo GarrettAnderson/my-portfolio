@@ -24,6 +24,10 @@ h3 {
   text-align: center;
 }
 
+input {
+  border: 1px solid grey;
+}
+
 .main-container {
   width: 100%;
 }
