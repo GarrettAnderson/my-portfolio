@@ -21,7 +21,7 @@ class Homepage extends Component {
           <section className="profile-img-container">
             <img src={profileImg} alt="headshot" className="profile-image" />
           </section>
-          <button onClick={() => this.setState({ navShown: !this.state.navShown })}>
+          <button className="navbar-dropdown" onClick={() => this.setState({ navShown: !this.state.navShown })}>
             {this.state.navShown ? <i class="fas fa-bars" /> : <i class="fas fa-times" />}
           </button>
           <nav className={`nav-dropdown ${this.state.navShown ? 'is-shown' : ''} `}>

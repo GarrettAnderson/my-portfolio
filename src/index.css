@@ -68,6 +68,13 @@ input {
   display: none;
 }
 
+.navbar-dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+}
+
 .projects li {
   display: flex;
   flex-direction: column;
@@ -85,6 +92,11 @@ input {
 
 .project-details img {
   width: 22rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
 }
 
 footer {
