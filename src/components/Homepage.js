@@ -24,18 +24,19 @@ class Homepage extends Component {
           <button onClick={() => this.setState({ navShown: !this.state.navShown })}>
             {this.state.navShown ? <i class="fas fa-bars" /> : <i class="fas fa-times" />}
           </button>
-          <nav className={`nav-dropdown ${this.state.navShown ? 'is-shown' : ''} `} />
-          <ol>
-            <li>
-              <a href="#favorite-projects">Projects</a>
-            </li>
-            <li>
-              <a href="#about-me">About</a>
-            </li>
-            <li>
-              <a href="#contact-me">Contact</a>
-            </li>
-          </ol>
+          <nav className={`nav-dropdown ${this.state.navShown ? 'is-shown' : ''} `}>
+            <ol>
+              <li>
+                <a href="#favorite-projects">Projects</a>
+              </li>
+              <li>
+                <a href="#about-me">About</a>
+              </li>
+              <li>
+                <a href="#contact-me">Contact</a>
+              </li>
+            </ol>
+          </nav>
         </header>
 
         <main>

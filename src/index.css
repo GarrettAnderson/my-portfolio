@@ -64,6 +64,10 @@ input {
   margin-bottom: 0;
 }
 
+.nav-dropdown.is-shown {
+  display: none;
+}
+
 .projects li {
   display: flex;
   flex-direction: column;
