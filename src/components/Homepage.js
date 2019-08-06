@@ -5,7 +5,8 @@ import data from '../data/projects.json'
 
 class Homepage extends Component {
   state = {
-    projects: []
+    projects: [],
+    navShown: true
   }
 
   componentDidMount() {
@@ -20,19 +21,21 @@ class Homepage extends Component {
           <section className="profile-img-container">
             <img src={profileImg} alt="headshot" className="profile-image" />
           </section>
-          <nav className="navbar">
-            <ol>
-              <li>
-                <a href="#favorite-projects">Projects</a>
-              </li>
-              <li>
-                <a href="#about-me">About</a>
-              </li>
-              <li>
-                <a href="#contact-me">Contact</a>
-              </li>
-            </ol>
-          </nav>
+          <button onClick={() => this.setState({ navShown: !this.state.navShown })}>
+            {this.state.navShown ? <i class="fas fa-bars" /> : <i class="fas fa-times" />}
+          </button>
+          <nav className={`nav-dropdown ${this.state.navShown ? 'is-shown' : ''} `} />
+          <ol>
+            <li>
+              <a href="#favorite-projects">Projects</a>
+            </li>
+            <li>
+              <a href="#about-me">About</a>
+            </li>
+            <li>
+              <a href="#contact-me">Contact</a>
+            </li>
+          </ol>
         </header>
 
         <main>
