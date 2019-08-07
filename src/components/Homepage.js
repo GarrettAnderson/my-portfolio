@@ -19,7 +19,7 @@ class Homepage extends Component {
       <div className="main-container">
         <header>
           <button className="navbar-dropdown" onClick={() => this.setState({ navShown: !this.state.navShown })}>
-            {this.state.navShown ? <i class="fas fa-bars" /> : <i class="fas fa-times" />}
+            {this.state.navShown ? <i className="fas fa-bars" /> : <i className="fas fa-times" />}
           </button>
           <nav className={`nav-dropdown ${this.state.navShown ? 'is-shown' : ''} `}>
             <ol>
@@ -40,9 +40,16 @@ class Homepage extends Component {
         </header>
 
         <main>
-          <article id="about-me">
+          <article id="about-me" className="about-me-section">
             <h3>About</h3>
-            <p>A Florida native with a global mindset and a passion for building beautiful things.</p>
+            <p>
+              A Florida native with a global mindset and a passion for building beautiful things. Lorem ipsum dolor sit
+              amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+              laborum.
+            </p>
           </article>
           <section className="projects" id="favorite-projects">
             <h3>Projects</h3>
@@ -61,20 +68,21 @@ class Homepage extends Component {
             </ol>
           </section>
 
-          <section className="contact-form" id="contact-me">
+          <section className="contact-form-container" id="contact-me">
             <h3>Contact</h3>
             <form
+              className="contact-form"
               id="fs-frm"
-              accept-charset="utf-8"
+              acceptCharset="utf-8"
               action="https://formspree.io/garrettleegrahamanderson@gmail.tld"
               method="POST"
             >
               <fieldset id="fs-form-inputs">
-                <label for="full-name">Full Name</label>
+                <label htmlFor="full-name">Full Name</label>
                 <input type="text" name="name" id="full-name" placeholder="First and Last" required="" />
-                <label for="email-address">Email Address</label>
+                <label htmlFor="email-address">Email Address</label>
                 <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="" />
-                <label for="message">Message</label>
+                <label htmlFor="message">Message</label>
                 <textarea
                   rows="5"
                   name="message"

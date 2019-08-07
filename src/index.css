@@ -33,9 +33,16 @@ input {
 }
 
 .profile-img-container {
+  background-image: url('./images/pawel-czerwinski-XLUuAayDyHs-unsplash.png');
+  background-position: right;
   display: flex;
   justify-content: center;
-  margin: 1rem;
+}
+
+.about-me-section p {
+  background-image: url('./images/sunset-bkgrnd.png');
+  background-position: left;
+  color: #fff;
 }
 
 .projects {
@@ -94,9 +101,15 @@ input {
   width: 22rem;
 }
 
-.contact-form {
+.contact-form-container {
   display: flex;
   flex-direction: column;
+}
+
+.contact-form {
+  background-image: url('./images/Blk_White_Bkgrnd.png');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 footer {
