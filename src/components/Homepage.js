@@ -35,7 +35,10 @@ class Homepage extends Component {
             </ol>
           </nav>
           <section className="profile-img-container">
-            <img src={profileImg} alt="headshot" className="profile-image" />
+            <section className="profileImg-with-text">
+              <img src={profileImg} alt="headshot" className="profile-image" />
+              <h3>Garrett Lee Graham Anderson</h3>
+            </section>
           </section>
         </header>
 
