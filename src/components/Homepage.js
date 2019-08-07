@@ -18,9 +18,6 @@ class Homepage extends Component {
     return (
       <div className="main-container">
         <header>
-          <section className="profile-img-container">
-            <img src={profileImg} alt="headshot" className="profile-image" />
-          </section>
           <button className="navbar-dropdown" onClick={() => this.setState({ navShown: !this.state.navShown })}>
             {this.state.navShown ? <i class="fas fa-bars" /> : <i class="fas fa-times" />}
           </button>
@@ -37,6 +34,9 @@ class Homepage extends Component {
               </li>
             </ol>
           </nav>
+          <section className="profile-img-container">
+            <img src={profileImg} alt="headshot" className="profile-image" />
+          </section>
         </header>
 
         <main>
