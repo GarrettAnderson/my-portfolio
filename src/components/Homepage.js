@@ -100,7 +100,10 @@ class Homepage extends Component {
           </section>
         </main>
         <footer>
-          Made with 💛by Garrett Lee Graham Anderson
+          <ul>
+            <li>Made with 💛</li>
+            <li>Garrett Lee Graham Anderson</li>
+          </ul>
           <ol>
             <li>
               <a href="https://github.com/GarrettAnderson">
