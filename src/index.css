@@ -38,12 +38,11 @@ input {
   background-attachment: fixed;
   display: flex;
   justify-content: center;
-  height: 100vh;
   padding: 1rem 0rem 0rem;
 }
 
 .about-me-section {
-  height: 100vh;
+  height: 100%;
 }
 
 .about-me-section p {
