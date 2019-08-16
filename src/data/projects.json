@@ -5,7 +5,8 @@
     "name": "Color Picker",
     "github": "https://github.com/GarrettAnderson/color-picker",
     "live": "https://color-picker-garrettanderson.netlify.com",
-    "description": "This is a description of the project including tech stack used."
+    "description": "This project is a tool to find the color value of hue saturation and light and displays the corresponding HSL code below the color box.",
+    "stack": "HTML5, CSS3, ReactJS"
   },
   {
     "id": 1,
@@ -13,7 +14,8 @@
     "name": "Bomb Sniffer",
     "github": "https://github.com/GarrettAnderson/bomb-sniffer",
     "live": "https://bomb-sniffer-garrettanderson.netlify.com/",
-    "description": "This is a description of the project including tech stack used."
+    "description": "Bomb Sniffer is a mock Minesweeper game. The user can choose the difficulty level which increases the size of the grid. The user is able to select a grid cell to check whether or not there is a bomb. If a bomb is selected, the user loses the game. A message appears above the grid to indicate that the user is the loser. If all grid cells are selected without the user choosing a bomb containing a grid cell, the user wins the game. A message appears above the grid to indicate that the user is the winner.",
+    "stack": "HTML5, CSS3, ReactJS, Axios and the Minesweeper API (include link to the Minweeper API webpage."
   },
   {
     "id": 2,
@@ -21,7 +23,8 @@
     "name": "To the Movies",
     "github": "https://github.com/GarrettAnderson/to-the-movies",
     "live": "https://to-the-movies-garrettanderson.netlify.com",
-    "description": "This is a description of the project including tech stack used."
+    "description": "To The Movies is a React application that queries The Movie Database API. The project lists movies that have been extracted and displayed on the front end. There is a block for each movie displaying the movie poster image, the movie title, the release date and a description. The header at the top of the page displays a featured film.",
+    "stack": "HTML5, CSS3, ReactJS, Axios and the Movie DB API "
   },
   {
     "id": 3,
@@ -29,6 +32,7 @@
     "name": "Yogi Me",
     "github": "https://github.com/GarrettAnderson/capstone",
     "live": "https://yogi-me.herokuapp.com/",
-    "description": "This is a description of the project including tech stack used."
+    "description": "This is an app created to allow yoga instructors the ability to create customizable classes by adding yoga pose images to a class. There is authentication implemented so that a yoga instructor can create and edit classes while secondary users will only be able to view a class already created by an instructor.",
+    "stack": "HTML5, CSS3, ReactJS, Axios, Ruby, and Ruby on Rails "
   }
 ]
