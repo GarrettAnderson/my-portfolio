@@ -46,12 +46,10 @@ class Homepage extends Component {
           <article id="about-me" className="about-me-section">
             <h3>About</h3>
             <p>
-              A Florida native with a global mindset and a passion for building beautiful things. Lorem ipsum dolor sit
-              amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-              laborum.
+              A Florida native with a global mindset and a passion for building beautiful things. My greatest wish is to
+              bring people together as a tribe in platonic love. There’s a oneness with the essence of creation that we
+              all share. Sentiments I incorporate in my approach to software development, focusing on how to best
+              represent my work and the work I accomplish for clients and employers alike.
             </p>
           </article>
           <section className="projects" id="favorite-projects">
