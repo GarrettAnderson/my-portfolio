@@ -23,6 +23,7 @@ class ProjectPage extends Component {
         <h1>{this.state.project.name}</h1>
         <img src={this.state.project.source} alt={`${this.state.project.name}` + ' Image'} />
         <p>{this.state.project.description}</p>
+        <p>{this.state.project.stack}</p>
         <ol>
           <li>
             <a href={this.state.project.github} target="_blank">
