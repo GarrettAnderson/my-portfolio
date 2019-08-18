@@ -160,6 +160,11 @@ footer ol {
   display: flex;
   justify-content: space-around;
 }
+
+footer li,
+a {
+  color: hsl(19, 20%, 40%);
+}
 /* FOR CARD FLIP FEATURE - Click project image and it turns to show the project details
 .scene {
   perspective: 600px;
