@@ -27,6 +27,11 @@ h4 {
   text-decoration: none !important;
 }
 
+h3,
+h4:active {
+  color: hsl(19, 20%, 40%);
+}
+
 input {
   border: 1px solid grey;
 }
@@ -125,6 +130,10 @@ input {
   border-bottom-right-radius: 15px;
 }
 
+.project-details p {
+  color: hsl(19, 20%, 40%);
+}
+
 .project-details img {
   width: 22rem;
 }
@@ -163,6 +172,11 @@ footer ol {
 
 footer li,
 a {
+  color: hsl(19, 20%, 40%);
+}
+
+footer li,
+a:active {
   color: hsl(19, 20%, 40%);
 }
 /* FOR CARD FLIP FEATURE - Click project image and it turns to show the project details
