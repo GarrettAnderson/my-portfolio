@@ -82,6 +82,11 @@ input {
   align-items: center;
 }
 
+.project-details ol {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .profile-image {
   width: 13rem;
   height: 12rem;
@@ -136,6 +141,7 @@ input {
 
 .project-details p {
   color: hsl(19, 20%, 40%);
+  padding: 1rem;
 }
 
 .project-details img {
