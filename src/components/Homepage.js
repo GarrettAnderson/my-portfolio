@@ -69,7 +69,7 @@ class Homepage extends Component {
             </ol>
           </section>
 
-          <section className="contact-form-container" id="contact-me">
+          <section className="contact-form-section" id="contact-me">
             <h3>Contact</h3>
             <form
               className="contact-form"
@@ -79,7 +79,7 @@ class Homepage extends Component {
               method="POST"
             >
               <fieldset id="fs-form-inputs">
-                <ol>
+                <ol class="contact-list-container">
                   <li>
                     <input type="text" name="name" id="full-name" placeholder="First and Last" required="" />
                   </li>
@@ -98,9 +98,11 @@ class Homepage extends Component {
                   <li>
                     <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission" />
                   </li>
+                  <li>
+                    <input type="submit" value="send" />
+                  </li>
                 </ol>
               </fieldset>
-              <input type="submit" value="send" />
             </form>
           </section>
         </main>

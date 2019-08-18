@@ -24,7 +24,7 @@ h3,
 h4 {
   text-align: center;
   color: hsl(19, 20%, 40%);
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 input {
@@ -129,9 +129,15 @@ input {
   width: 22rem;
 }
 
-.contact-form-container {
+.contact-list-container {
   display: flex;
   flex-direction: column;
+  text-align: center;
+  padding: 2rem;
+}
+
+.contact-list-container li {
+  margin-bottom: 1rem;
 }
 
 .contact-form {
