@@ -16,7 +16,7 @@ class ProjectPage extends Component {
 
   render() {
     return (
-      <section class="project-details">
+      <section className="project-details">
         <nav>
           <a href="/">Back</a>
         </nav>

@@ -24,10 +24,10 @@ class Homepage extends Component {
           <nav className={`nav-dropdown ${this.state.navShown ? 'is-shown' : ''} `}>
             <ol>
               <li>
-                <a href="#favorite-projects">Projects</a>
+                <a href="#favorite-projects">About</a>
               </li>
               <li>
-                <a href="#about-me">About</a>
+                <a href="#about-me">Projects</a>
               </li>
               <li>
                 <a href="#contact-me">Contact</a>

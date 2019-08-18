@@ -189,6 +189,12 @@ footer li,
 a:active {
   color: hsl(19, 20%, 40%);
 }
+
+footer li,
+a:hover {
+  cursor: pointer;
+}
+
 /* FOR CARD FLIP FEATURE - Click project image and it turns to show the project details
 .scene {
   perspective: 600px;
