@@ -36,6 +36,11 @@ input {
   border: 1px solid grey;
 }
 
+.navbar-dropdown {
+  border: none;
+  background-color: transparent;
+}
+
 .main-container {
   width: 100%;
 }
@@ -57,7 +62,6 @@ input {
 
 .about-me-section h3 {
   margin-bottom: 0;
-  margin-top: 2rem;
 }
 
 .about-me-section p {
