@@ -99,7 +99,7 @@ class Homepage extends Component {
                     <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission" />
                   </li>
                   <li>
-                    <input type="submit" value="send" />
+                    <input type="submit" value="send" className="send-btn" />
                   </li>
                 </ol>
               </fieldset>

@@ -139,6 +139,10 @@ input {
   border-bottom-right-radius: 15px;
 }
 
+.project-details h1 {
+  text-align: center;
+}
+
 .project-details p {
   color: hsl(19, 20%, 40%);
   padding: 1rem;
@@ -164,6 +168,10 @@ input {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+.send-btn {
+  background-color: #fff;
 }
 
 footer {
