@@ -152,6 +152,14 @@ input {
   width: 100%;
 }
 
+.project-details nav {
+  margin-left: 1rem;
+}
+
+.project-details nav a {
+  margin-top: 1rem;
+}
+
 .contact-list-container {
   display: flex;
   flex-direction: column;
