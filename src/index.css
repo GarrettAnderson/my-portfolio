@@ -153,11 +153,11 @@ input {
 }
 
 .project-details nav {
-  margin-left: 1rem;
+  margin-top: 1rem;
 }
 
 .project-details nav a {
-  margin-top: 1rem;
+  margin-left: 1rem;
 }
 
 .contact-list-container {
