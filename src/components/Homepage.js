@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import profileImg from '../images/cropHeadShot.png'
-import profileImg from '../images/Garrett_Anderson_July_2019.pdf'
+import resume from '../images/Garrett_Anderson_July_2019.pdf'
 import data from '../data/projects.json'
 
 class Homepage extends Component {
@@ -72,9 +72,8 @@ class Homepage extends Component {
             <h3>About</h3>
             <p>
               A Florida native with a global mindset and a passion for building beautiful things. My greatest wish is to
-              bring people together as a tribe in platonic love. There’s a oneness with the essence of creation that we
-              all share. I incorporate these sentiments in my approach to software development, focusing on how to best
-              represent my work and the work I accomplish for clients and employers alike.
+              bring people together as a tribe. I incorporate this sentiment in my approach to software development,
+              focusing on how to best represent my work and the work I accomplish for clients and employers alike.
             </p>
           </article>
           <section className="projects" id="favorite-projects">
