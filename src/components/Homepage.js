@@ -56,8 +56,9 @@ class Homepage extends Component {
                     </a>
                   </li>
                   <li className="resume">
-                    <i className="fab fa-medium-m" />
-                    <a href="images/Garrett_Anderson_July_2019.pdf" />
+                    <a href="images/Garrett_Anderson_July_2019.pdf">
+                      <i class="far fa-file" />
+                    </a>
                   </li>
                 </ol>
               </section>
@@ -155,8 +156,9 @@ class Homepage extends Component {
                 </a>
               </li>
               <li className="resume">
-                <i className="fab fa-medium-m" />
-                <a href="images/Garrett_Anderson_July_2019" />
+                <a href="images/Garrett_Anderson_July_2019.pdf">
+                  <i class="far fa-file" />
+                </a>
               </li>
             </ol>
           </section>
