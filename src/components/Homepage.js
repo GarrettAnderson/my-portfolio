@@ -38,6 +38,30 @@ class Homepage extends Component {
             <section className="profileImg-with-text">
               <img src={profileImg} alt="headshot" className="profile-image" />
               <h3>Garrett Lee Graham Anderson</h3>
+              <section className="social-media-icons">
+                <ol>
+                  <li>
+                    <a href="https://github.com/GarrettAnderson">
+                      <i className="fab fa-github" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com/in/garrettleegrahamanderson/">
+                      <i className="fab fa-linkedin-in" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://medium.com/@garrettleegrahamanderson">
+                      <i className="fab fa-medium-m" />
+                    </a>
+                  </li>
+                </ol>
+              </section>
+              <section className="resume">
+                <a href="#">
+                  <h5>Resume</h5>
+                </a>
+              </section>
             </section>
           </section>
         </header>
@@ -111,7 +135,7 @@ class Homepage extends Component {
             <li>Made with 💛</li>
             <li>Garrett Lee Graham Anderson</li>
           </ul>
-          <ol>
+          <ol className="social-media-icons">
             <li>
               <a href="https://github.com/GarrettAnderson">
                 <i className="fab fa-github" />
