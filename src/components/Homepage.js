@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import profileImg from '../images/cropHeadShot.png'
+// import profileImg from '../images/Garrett_Anderson_July_2019.png'
 import data from '../data/projects.json'
 
 class Homepage extends Component {
