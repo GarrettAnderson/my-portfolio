@@ -93,6 +93,7 @@ input {
   width: 13rem;
   height: 12rem;
   border-radius: 50%;
+  margin-bottom: 1rem;
 }
 
 .profileImg-with-text {
@@ -135,7 +136,7 @@ input {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding-bottom: 1rem;
+  padding-bottom: 0.2rem;
 }
 
 .projects img {
@@ -143,6 +144,7 @@ input {
   border: 3px solid black;
   border-top-left-radius: 15px;
   border-bottom-right-radius: 15px;
+  margin-bottom: 0.2rem;
 }
 
 .project-details h1 {
@@ -195,6 +197,11 @@ footer {
 footer ul {
   list-style: none;
   padding-left: 0;
+  margin: 0;
+}
+
+footer ul li:last-child {
+  padding: 1rem;
 }
 
 footer ol {
@@ -215,16 +222,19 @@ a:active {
 footer li,
 a:hover {
   cursor: pointer;
+  text-decoration: none !important;
 }
 
 .social-media-icons {
   width: 100%;
   color: hsl(19, 20%, 40%);
+  margin-bottom: 1rem;
 }
 
 .social-media-icons ol {
   display: flex;
   justify-content: space-evenly;
+  margin: 0;
 }
 
 /* FOR CARD FLIP FEATURE - Click project image and it turns to show the project details

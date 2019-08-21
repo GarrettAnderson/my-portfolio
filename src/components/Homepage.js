@@ -55,12 +55,11 @@ class Homepage extends Component {
                       <i className="fab fa-medium-m" />
                     </a>
                   </li>
+                  <li className="resume">
+                    <i className="fab fa-medium-m" />
+                    <a href="images/Garrett_Anderson_July_2019.pdf" />
+                  </li>
                 </ol>
-              </section>
-              <section className="resume">
-                <a href="#">
-                  <h5>Resume</h5>
-                </a>
               </section>
             </section>
           </section>
@@ -134,24 +133,33 @@ class Homepage extends Component {
           <ul>
             <li>Made with 💛</li>
             <li>Garrett Lee Graham Anderson</li>
+            <li className="resume">
+              <a href="#">Resume</a>
+            </li>
           </ul>
-          <ol className="social-media-icons">
-            <li>
-              <a href="https://github.com/GarrettAnderson">
-                <i className="fab fa-github" />
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/garrettleegrahamanderson/">
-                <i className="fab fa-linkedin-in" />
-              </a>
-            </li>
-            <li>
-              <a href="https://medium.com/@garrettleegrahamanderson">
+          <section className="social-media-icons">
+            <ol>
+              <li>
+                <a href="https://github.com/GarrettAnderson">
+                  <i className="fab fa-github" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/garrettleegrahamanderson/">
+                  <i className="fab fa-linkedin-in" />
+                </a>
+              </li>
+              <li>
+                <a href="https://medium.com/@garrettleegrahamanderson">
+                  <i className="fab fa-medium-m" />
+                </a>
+              </li>
+              <li className="resume">
                 <i className="fab fa-medium-m" />
-              </a>
-            </li>
-          </ol>
+                <a href="images/Garrett_Anderson_July_2019" />
+              </li>
+            </ol>
+          </section>
         </footer>
       </div>
     )
