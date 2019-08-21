@@ -134,9 +134,6 @@ class Homepage extends Component {
           <ul>
             <li>Made with 💛</li>
             <li>Garrett Lee Graham Anderson</li>
-            <li className="resume">
-              <a href="#">Resume</a>
-            </li>
           </ul>
           <section className="social-media-icons">
             <ol>
