@@ -58,7 +58,7 @@ class Homepage extends Component {
                   </li>
                   <li className="resume">
                     <a href="images/Garrett_Anderson_July_2019.pdf">
-                      <i class="far fa-file" />
+                      <i className="far fa-file" />
                     </a>
                   </li>
                 </ol>
@@ -77,7 +77,7 @@ class Homepage extends Component {
             </p>
           </article>
 
-          <section class="project-contact-sections-container">
+          <section className="project-contact-sections-container">
             <section className="projects" id="favorite-projects">
               <h3>Projects</h3>
               <ol>
@@ -105,7 +105,7 @@ class Homepage extends Component {
                 method="POST"
               >
                 <fieldset id="fs-form-inputs">
-                  <ol class="contact-list-container">
+                  <ol className="contact-list-container">
                     <li>
                       <input type="text" name="name" id="full-name" placeholder="First and Last" required="" />
                     </li>
@@ -163,7 +163,7 @@ class Homepage extends Component {
               </li>
               <li className="resume">
                 <a href="images/Garrett_Anderson_July_2019.pdf">
-                  <i class="far fa-file" />
+                  <i className="far fa-file" />
                 </a>
               </li>
             </ol>

@@ -152,11 +152,12 @@ input {
 }
 
 .projects img {
-  width: 90%;
+  width: 7rem;
+  height: 100%;
   border: 3px solid black;
   border-top-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  margin-bottom: 0.2rem;
+  margin: 0;
 }
 
 .project-details h1 {
@@ -295,5 +296,15 @@ a:hover {
 @media only screen and (min-width: 425px) {
   .projects ol {
     display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  .projects img {
+    height: 4rem;
+  }
+
+  .projects img:hover {
+    cursor: pointer;
   }
 }
