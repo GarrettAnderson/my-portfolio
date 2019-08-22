@@ -101,7 +101,7 @@ class Homepage extends Component {
                 className="contact-form"
                 id="fs-frm"
                 acceptCharset="utf-8"
-                action="https://formspree.io/garrettleegrahamanderson@gmail.tld"
+                action="https://formspree.io/email@domain.tld"
                 method="POST"
               >
                 <fieldset id="fs-form-inputs">
@@ -112,9 +112,9 @@ class Homepage extends Component {
                     <li>
                       <input
                         type="email"
-                        name="_replyto"
+                        name="_replyTo"
                         id="email-address"
-                        placeholder="email@domain.tld"
+                        placeholder="youremail@domain.extension"
                         required=""
                       />
                     </li>
