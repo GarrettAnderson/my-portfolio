@@ -152,7 +152,7 @@ input {
 }
 
 .projects img {
-  width: 7rem;
+  width: 90%;
   height: 100%;
   border: 3px solid black;
   border-top-left-radius: 15px;
