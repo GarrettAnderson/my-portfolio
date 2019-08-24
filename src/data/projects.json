@@ -34,5 +34,14 @@
     "live": "https://yogi-me.herokuapp.com/",
     "description": "This is an app created to allow yoga instructors the ability to create customizable classes by adding yoga pose images to a class. There is authentication implemented so that a yoga instructor can create and edit classes while secondary users will only be able to view a class already created by an instructor.",
     "stack": "HTML5, CSS3, ReactJS, Axios, Ruby, and Ruby on Rails "
+  },
+  {
+    "id": 4,
+    "source": "https://i.ibb.co/2kxtW00/James-Hmpage.png",
+    "name": "James Dean Does Other Stuff",
+    "github": "https://github.com/GarrettAnderson/james-photo-gallery",
+    "live": "https://james-photo-gallery-garrettanderson.netlify.com/",
+    "description": "This is a gallery app created for a dear friend who is a talented artist.",
+    "stack": "HTML5, CSS3, and ReactJS "
   }
 ]
