@@ -11,3 +11,11 @@
 .about-container {
   height: 60%;
 }
+
+.about-me h1 {
+  font-family: "Ultra", serif;
+}
+
+.about-me p {
+  font-family: "PT Serif", serif;
+}

@@ -8,7 +8,7 @@ export default function About() {
       <div className="row-container">
         <section className="row align-itens-center justify-content-center text-center">
           <section className="about-me col-sm-12 col-md-6 col-lg-6">
-            <h2>About Me</h2>
+            <h1>Full Stack Developer</h1>
             <p>
               A Florida native with a global mindset and a passion for building
               beautiful things. My greatest wish is to bring people together as
