@@ -1,0 +1,13 @@
+.row-container {
+  padding-top: 60px;
+  padding-bottom: 130px;
+}
+
+.headshot {
+  border-radius: 50%;
+  width: 180px;
+}
+
+.about-container {
+  height: 60%;
+}

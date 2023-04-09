@@ -1,0 +1,10 @@
+.footer-container {
+  height: 20%;
+}
+
+.footer-container ol {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
