@@ -5,7 +5,7 @@ export default function Resume() {
   return (
     <section className="resume-container container">
       <div className="row">
-        <div className="col-sm-12 col-md-6">
+        <div className="col-sm-12 col-md-6 d-flex justify-content-center align-items-center">
           <a href={ResumeFile} target="_blank">
             <button type="button" class="btn btn-outline-info">
               Dowload
