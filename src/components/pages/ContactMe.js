@@ -2,17 +2,17 @@ import React from "react";
 
 export default function ContactMe() {
   return (
-    <form>
-      <div class="row">
-        <div class="col">
+    <form className="needs-validation">
+      <div className="row" novalidate>
+        <div className="col">
           <input
             type="text"
-            class="form-control"
+            className="form-control has-validation"
             placeholder="First name"
             aria-label="First name"
           />
         </div>
-        <div class="col">
+        <div className="col">
           <input
             type="text"
             class="form-control"
@@ -21,26 +21,31 @@ export default function ContactMe() {
           />
         </div>
       </div>
-      <div class="mb-3">
+      <div className="mb-3">
         <label for="exampleFormControlInput1" class="form-label">
           Email address
         </label>
         <input
           type="email"
-          class="form-control"
+          className="form-control"
           id="exampleFormControlInput1"
           placeholder="name@example.com"
         />
       </div>
-      <div class="mb-3">
+      <div className="mb-3">
         <label for="exampleFormControlTextarea1" class="form-label">
           Example textarea
         </label>
         <textarea
-          class="form-control"
+          className="form-control"
           id="exampleFormControlTextarea1"
           rows="3"
         ></textarea>
+      </div>
+      <div className="col-12">
+        <button className="btn btn-primary" type="submit">
+          Contact Me
+        </button>
       </div>
     </form>
   );
