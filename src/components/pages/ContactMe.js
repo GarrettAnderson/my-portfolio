@@ -1,15 +1,18 @@
 import React from "react";
-import { useState } from "react";
+import { useForm } from "react-hook-form";
 
 export default function ContactMe() {
-  const [mouseOut, setMouseOut] = useState("false");
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
 
-  const moveMouseOut = () => {
-    setMouseOut(true);
+  const onSubmit = (data) => {
+    console.log(data);
   };
-
   return (
-    <form className="needs-validation">
+    <form className="needs-validation" onSubmit={handleSubmit(onSubmit)}>
       <div className="row" novalidate>
         <div className="col">
           <input
@@ -17,8 +20,9 @@ export default function ContactMe() {
             className="form-control has-validation"
             placeholder="First name"
             aria-label="First name"
-            required
+            {...register("firstName", { required: true })}
           />
+          {errors.firstName && <p>First name is required.</p>}
         </div>
         <div className="col">
           <input
