@@ -1,6 +1,13 @@
 import React from "react";
+import { useState } from "react";
 
 export default function ContactMe() {
+  const [mouseOut, setMouseOut] = useState("false");
+
+  const moveMouseOut = () => {
+    setMouseOut(true);
+  };
+
   return (
     <form className="needs-validation">
       <div className="row" novalidate>
@@ -10,6 +17,7 @@ export default function ContactMe() {
             className="form-control has-validation"
             placeholder="First name"
             aria-label="First name"
+            required
           />
         </div>
         <div className="col">
@@ -18,6 +26,7 @@ export default function ContactMe() {
             class="form-control"
             placeholder="Last name"
             aria-label="Last name"
+            required
           />
         </div>
       </div>
@@ -30,6 +39,7 @@ export default function ContactMe() {
           className="form-control"
           id="exampleFormControlInput1"
           placeholder="name@example.com"
+          required
         />
       </div>
       <div className="mb-3">
@@ -40,6 +50,7 @@ export default function ContactMe() {
           className="form-control"
           id="exampleFormControlTextarea1"
           rows="3"
+          required
         ></textarea>
       </div>
       <div className="col-12">

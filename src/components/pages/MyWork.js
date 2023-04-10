@@ -37,14 +37,14 @@ export default function MyWork() {
       githubUrl: "https://github.com/GarrettAnderson/weather-app",
       hasGit: true,
     },
-    // {
-    //   name: "Bomb Sniffer",
-    //   image: "bombSnifferImg.png",
-    //   desc: "This is a project using an API to simulate the game minesweeper.",
-    //   liveUrl: "https://bomb-sniffer-garrettanderson.netlify.com",
-    //   githubUrl: "https://github.com/GarrettAnderson/bomb-sniffer",
-    //   hasGit: true,
-    // },
+    {
+      name: "Tech Blog",
+      image: "tech-blog-screenshot.png",
+      desc: "This is a full stack project that allows a user to create, read, update and delete a blog post.",
+      liveUrl: "https://salty-reaches-84386.herokuapp.com/",
+      githubUrl: "https://github.com/GarrettAnderson/tech-blog",
+      hasGit: true,
+    },
     // {
     //   name: "Bomb Sniffer",
     //   image: "bombSnifferImg.png",
