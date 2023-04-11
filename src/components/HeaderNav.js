@@ -8,8 +8,8 @@ export default function HeaderNav({ currentPage, handlePageChange }) {
         <div className="container-fluid">
           <a
             onClick={() => handlePageChange("About")}
-            className="navbar-brand"
-            // href="#"
+            className="navbar-brand nav-name"
+            href="#"
           >
             Garrett Anderson
           </a>
@@ -25,7 +25,7 @@ export default function HeaderNav({ currentPage, handlePageChange }) {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div className="navbar-nav">
+            <div className="navbar-nav nav-links">
               <a
                 onClick={() => handlePageChange("About")}
                 className={

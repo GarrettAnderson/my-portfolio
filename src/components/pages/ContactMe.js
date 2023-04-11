@@ -1,7 +1,14 @@
 import React from "react";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
+import { Tooltip } from "react-tooltip";
 
 export default function ContactMe() {
+  const [mouseOutInput, setMouseOutInput] = useState(false);
+
+  const addTooltip = (e) => {
+    console.log(e.target);
+  };
   const {
     register,
     handleSubmit,
@@ -20,7 +27,8 @@ export default function ContactMe() {
             className="form-control has-validation"
             placeholder="First name"
             aria-label="First name"
-            {...register("firstName", { required: true })}
+            onMouseOut={addTooltip}
+            {...register("First Name", { required: true })}
           />
           {errors.firstName && <p>First name is required.</p>}
         </div>
@@ -58,9 +66,10 @@ export default function ContactMe() {
         ></textarea>
       </div>
       <div className="col-12">
-        <button className="btn btn-primary" type="submit">
+        {/* <button className="btn btn-primary" type="submit">
           Contact Me
-        </button>
+        </button> */}
+        <input type="submit" />
       </div>
     </form>
   );

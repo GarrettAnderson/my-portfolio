@@ -12,7 +12,7 @@ export default function Resume() {
             </button>
           </a>
         </div>
-        <div className="col-sm-12 col-md-6">
+        <div className="col-sm-12 col-md-6 skills">
           <h1>Skills</h1>
           <ul class="list-group list-group-flush">
             <li class="list-group-item">HTML5</li>
