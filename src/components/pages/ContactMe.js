@@ -8,6 +8,12 @@ export default function ContactMe() {
 
   const addTooltip = (e) => {
     console.log(e.target);
+
+    e.target.setAttribute("data-tooltip-id", "my-tooltip");
+    e.target.setAttribute(
+      "data-tooltip-content",
+      `Please fill in ${e.target.placeholder}`
+    );
   };
   const {
     register,
@@ -20,7 +26,7 @@ export default function ContactMe() {
   };
   return (
     <form className="needs-validation" onSubmit={handleSubmit(onSubmit)}>
-      <div className="row" novalidate>
+      <div className="row">
         <div className="col">
           <input
             type="text"
@@ -71,6 +77,7 @@ export default function ContactMe() {
         </button> */}
         <input type="submit" />
       </div>
+      <Tooltip id="my-tooltip" />
     </form>
   );
 }
