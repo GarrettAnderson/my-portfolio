@@ -1,20 +1,22 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.6320a910.css",
-    "main.js": "/my-portfolio/static/js/main.dba14fd4.js",
+    "main.css": "/my-portfolio/static/css/main.006abc3d.css",
+    "main.js": "/my-portfolio/static/js/main.896f5e26.js",
+    "static/media/background-img.jpg": "/my-portfolio/static/media/background-img.525abd0d77299b7fc799.jpg",
     "static/media/bombSnifferImg.png": "/my-portfolio/static/media/bombSnifferImg.71d873f242a2c3b1ef20.png",
     "static/media/weather-app-screenshot.png": "/my-portfolio/static/media/weather-app-screenshot.265f0b1f634b2547d466.png",
     "static/media/cropHeadShot.png": "/my-portfolio/static/media/cropHeadShot.f779d3183c6550fdb8c5.png",
+    "static/media/tech-blog-screenshot.png": "/my-portfolio/static/media/tech-blog-screenshot.3c378747070d7ca1bbab.png",
     "static/media/bootlegspotify.png": "/my-portfolio/static/media/bootlegspotify.1e21f08b112f5c07b80c.png",
     "static/media/GarrettAndersonResume2023.pdf": "/my-portfolio/static/media/GarrettAndersonResume2023.c0775bfaa2b3d0447c5e.pdf",
     "static/media/gamersgauntlet.png": "/my-portfolio/static/media/gamersgauntlet.0a03163ed7f9148fd9a4.png",
     "static/media/logo.svg": "/my-portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/my-portfolio/index.html",
-    "main.6320a910.css.map": "/my-portfolio/static/css/main.6320a910.css.map",
-    "main.dba14fd4.js.map": "/my-portfolio/static/js/main.dba14fd4.js.map"
+    "main.006abc3d.css.map": "/my-portfolio/static/css/main.006abc3d.css.map",
+    "main.896f5e26.js.map": "/my-portfolio/static/js/main.896f5e26.js.map"
   },
   "entrypoints": [
-    "static/css/main.6320a910.css",
-    "static/js/main.dba14fd4.js"
+    "static/css/main.006abc3d.css",
+    "static/js/main.896f5e26.js"
   ]
 }

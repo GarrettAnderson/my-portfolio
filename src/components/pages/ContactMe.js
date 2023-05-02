@@ -33,7 +33,7 @@ export default function ContactMe() {
             className="form-control has-validation"
             placeholder="First name"
             aria-label="First name"
-            onMouseOut={addTooltip}
+            onMouseEnter={addTooltip}
             {...register("First Name", { required: true })}
           />
           {errors.firstName && <p>First name is required.</p>}
