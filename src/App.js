@@ -9,23 +9,40 @@ import Resume from "./components/pages/Resume";
 import Footer from "./components/Footer";
 
 function App() {
-  const myRef = useRef(null);
+  const homeRef = useRef();
+  const aboutRef = useRef(null);
+  const workRef = useRef(null);
+  const contactRef = useRef(null);
+  const resumeRef = useRef(null);
+
   const [currentPage, setCurrentPage] = useState("About");
   const handlePageChange = (page) => setCurrentPage(page);
-  const executeScroll = () => myRef.current.scrollIntoView();
+  const executeScroll = (elementRef) => {
+    // window.scrollTo({
+    //   top: elementRef.current,
+    //   behavior: "smooth",
+    // });
+    elementRef.current.scrollIntoView({ behavior: "smooth" });
+    setCurrentPage(elementRef);
+    console.log(currentPage);
+  };
 
   return (
-    <div className="App">
+    <div className="App" ref={homeRef}>
       <Header
         currentPage={currentPage}
         handlePageChange={handlePageChange}
         executeScroll={executeScroll}
-        myRef={myRef}
+        about={aboutRef}
+        work={workRef}
+        home={homeRef}
+        contact={contactRef}
+        resume={resumeRef}
       />
-      <About myRef={myRef} />
-      <MyWork />
-      <ContactMe />
-      <Resume />
+      <About about={aboutRef} />
+      <MyWork work={workRef} />
+      <ContactMe contact={contactRef} />
+      <Resume resume={resumeRef} />
       <Footer />
     </div>
   );

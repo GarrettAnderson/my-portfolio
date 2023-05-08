@@ -7,7 +7,7 @@ export default function About(props) {
     <main
       id="about-container"
       className="about-container container"
-      ref={props.myRef}
+      ref={props.about}
     >
       <div className="row-container">
         <section className="row align-itens-center justify-content-center text-center">

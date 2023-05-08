@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { Tooltip } from "react-tooltip";
 
-export default function ContactMe() {
+export default function ContactMe(props) {
   const [mouseOutInput, setMouseOutInput] = useState(false);
 
   const addTooltip = (e) => {
@@ -29,6 +29,7 @@ export default function ContactMe() {
       id="contact-form"
       className="needs-validation"
       onSubmit={handleSubmit(onSubmit)}
+      ref={props.contact}
     >
       <div className="row">
         <div className="col">
