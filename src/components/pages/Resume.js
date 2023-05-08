@@ -3,7 +3,7 @@ import ResumeFile from "../../assets/files/GarrettAndersonResume2023.pdf";
 
 export default function Resume() {
   return (
-    <section className="resume-container container">
+    <section id="resume-section" className="resume-container container">
       <div className="row">
         <div className="col-sm-12 col-md-6 d-flex justify-content-center align-items-center">
           <a href={ResumeFile} target="_blank">

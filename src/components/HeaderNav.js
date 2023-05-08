@@ -1,7 +1,12 @@
 import React from "react";
 import "../styles/HeaderNav.css";
 
-export default function HeaderNav({ currentPage, handlePageChange }) {
+export default function HeaderNav({
+  props,
+  executeScroll,
+  currentPage,
+  handlePageChange,
+}) {
   return (
     <header className="header-container">
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -9,7 +14,7 @@ export default function HeaderNav({ currentPage, handlePageChange }) {
           <a
             onClick={() => handlePageChange("About")}
             className="navbar-brand nav-name"
-            href="#"
+            href="/"
           >
             Garrett Anderson
           </a>
@@ -32,7 +37,7 @@ export default function HeaderNav({ currentPage, handlePageChange }) {
                   currentPage === "About" ? "nav-link active" : "nav-link"
                 }
                 aria-current="page"
-                href="#"
+                href="about"
               >
                 About Me
               </a>
@@ -41,7 +46,7 @@ export default function HeaderNav({ currentPage, handlePageChange }) {
                 className={
                   currentPage === "MyWork" ? "nav-link active" : "nav-link"
                 }
-                href="#"
+                href="work"
               >
                 My Work
               </a>
@@ -50,7 +55,7 @@ export default function HeaderNav({ currentPage, handlePageChange }) {
                 className={
                   currentPage === "ContactMe" ? "nav-link active" : "nav-link"
                 }
-                href="#"
+                href="contact"
               >
                 Contact Me
               </a>
@@ -59,7 +64,7 @@ export default function HeaderNav({ currentPage, handlePageChange }) {
                 className={
                   currentPage === "Resume" ? "nav-link active" : "nav-link"
                 }
-                href="#"
+                href="resume"
               >
                 Resume
               </a>

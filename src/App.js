@@ -1,5 +1,5 @@
 import logo from "./logo.svg";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import "./App.css";
 import Header from "./components/HeaderNav";
 import About from "./components/pages/About";
@@ -9,28 +9,23 @@ import Resume from "./components/pages/Resume";
 import Footer from "./components/Footer";
 
 function App() {
+  const myRef = useRef(null);
   const [currentPage, setCurrentPage] = useState("About");
-
-  // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
-  const renderPage = () => {
-    if (currentPage === "About") {
-      return <About />;
-    }
-    if (currentPage === "MyWork") {
-      return <MyWork />;
-    }
-    if (currentPage === "ContactMe") {
-      return <ContactMe />;
-    }
-    return <Resume />;
-  };
-
   const handlePageChange = (page) => setCurrentPage(page);
+  const executeScroll = () => myRef.current.scrollIntoView();
 
   return (
     <div className="App">
-      <Header currentPage={currentPage} handlePageChange={handlePageChange} />
-
+      <Header
+        currentPage={currentPage}
+        handlePageChange={handlePageChange}
+        executeScroll={executeScroll}
+        myRef={myRef}
+      />
+      <About myRef={myRef} />
+      <MyWork />
+      <ContactMe />
+      <Resume />
       <Footer />
     </div>
   );

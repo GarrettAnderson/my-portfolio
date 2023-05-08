@@ -3,7 +3,7 @@ import "../styles/Footer.css";
 
 export default function Footer() {
   return (
-    <footer className="footer-container container">
+    <footer id="footer" className="footer-container container">
       <p>&copy; 2022 Garrett Lee Graham Anderson</p>
       <ol>
         <li>

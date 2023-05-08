@@ -25,7 +25,11 @@ export default function ContactMe() {
     console.log(data);
   };
   return (
-    <form className="needs-validation" onSubmit={handleSubmit(onSubmit)}>
+    <form
+      id="contact-form"
+      className="needs-validation"
+      onSubmit={handleSubmit(onSubmit)}
+    >
       <div className="row">
         <div className="col">
           <input

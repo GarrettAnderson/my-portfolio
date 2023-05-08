@@ -2,9 +2,13 @@ import React from "react";
 import "../../styles/About.css";
 import headshot from "../../assets/images/cropHeadShot.png";
 
-export default function About() {
+export default function About(props) {
   return (
-    <main className="about-container container">
+    <main
+      id="about-container"
+      className="about-container container"
+      ref={props.myRef}
+    >
       <div className="row-container">
         <section className="row align-itens-center justify-content-center text-center">
           <section className="about-me col-sm-12 col-md-6 col-lg-6">
