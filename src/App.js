@@ -29,17 +29,19 @@ function App() {
 
   return (
     <div className="App" ref={homeRef}>
-      <Header
-        currentPage={currentPage}
-        handlePageChange={handlePageChange}
-        executeScroll={executeScroll}
-        about={aboutRef}
-        work={workRef}
-        home={homeRef}
-        contact={contactRef}
-        resume={resumeRef}
-      />
-      <About about={aboutRef} />
+      <div className="Hero-Bkgrnd">
+        <Header
+          currentPage={currentPage}
+          handlePageChange={handlePageChange}
+          executeScroll={executeScroll}
+          about={aboutRef}
+          work={workRef}
+          home={homeRef}
+          contact={contactRef}
+          resume={resumeRef}
+        />
+        <About about={aboutRef} />
+      </div>
       <MyWork work={workRef} />
       <ContactMe contact={contactRef} />
       <Resume resume={resumeRef} />
