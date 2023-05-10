@@ -1,5 +1,7 @@
 import React from "react";
 import ResumeFile from "../../assets/files/GarrettAndersonResume2023.pdf";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { icon } from "@fortawesome/fontawesome-svg-core/import.macro";
 
 export default function Resume(props) {
   return (
@@ -19,6 +21,8 @@ export default function Resume(props) {
         <div className="col-sm-12 col-md-6 skills">
           <h1>Skills</h1>
           <ul class="list-group list-group-flush">
+            {/* <FontAwesomeIcon icon={icon({ name: "user-secret" })} /> */}
+            <li></li>
             <li class="list-group-item">HTML5</li>
             <li class="list-group-item">CSS3</li>
             <li class="list-group-item">JavaScript</li>
