@@ -11,6 +11,7 @@ import {
   faNodeJs,
   faReact,
 } from "@fortawesome/free-brands-svg-icons";
+import "../../styles/Resume.css";
 
 export default function Resume(props) {
   return (
@@ -20,18 +21,9 @@ export default function Resume(props) {
       ref={props.resume}
     >
       <div className="row">
-        <div className="col-sm-12 col-md-6 d-flex justify-content-center align-items-center">
-          <a href={ResumeFile} target="_blank">
-            <button type="button" class="btn btn-outline-info">
-              Dowload
-            </button>
-          </a>
-        </div>
-        <div className="col-sm-12 col-md-6 skills">
+        <div className="col-sm-12 skills">
           <h1>Skills</h1>
           <ul className="list-group list-group-flush">
-            {/* <FontAwesomeIcon icon={icon({ name: "user-secret" })} /> */}
-            <li></li>
             <li className="list-group-item">
               <FontAwesomeIcon icon={faHtml5} />
             </li>
@@ -55,6 +47,13 @@ export default function Resume(props) {
             {/* <li class="list-group-item">SQL</li>
             <li class="list-group-item">Express.js</li> */}
           </ul>
+        </div>
+        <div className="col-sm-12 d-flex justify-content-center align-items-center">
+          <a href={ResumeFile} target="_blank">
+            <button type="button" class="btn btn-outline-info">
+              Dowload Resume
+            </button>
+          </a>
         </div>
       </div>
     </section>
