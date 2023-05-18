@@ -26,6 +26,12 @@
   padding: 2rem;
 }
 
+.contact-me-section h1 {
+  background-color: #303f54;
+  color: white;
+  padding: 2rem;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
