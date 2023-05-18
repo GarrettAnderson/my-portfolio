@@ -5,11 +5,25 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: center;
+  background-attachment: fixed;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.project-thumbnails {
+  background-image: url("./assets/images/white-bkgrnd.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.project-thumbnails h1 {
+  background-color: #303f54;
+  color: white;
+  padding: 2rem;
 }
 
 @media (prefers-reduced-motion: no-preference) {

@@ -7,3 +7,10 @@
 .skills li {
   border-bottom: none;
 }
+
+.resume-container {
+  background-image: url("../assets/images/pink-bkgrnd.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}

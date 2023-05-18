@@ -9,7 +9,7 @@ import Resume from "./components/pages/Resume";
 import Footer from "./components/Footer";
 
 function App() {
-  const homeRef = useRef();
+  const homeRef = useRef(null);
   const aboutRef = useRef(null);
   const workRef = useRef(null);
   const contactRef = useRef(null);
@@ -42,8 +42,14 @@ function App() {
         />
         <About about={aboutRef} />
       </div>
-      <MyWork work={workRef} />
-      <ContactMe contact={contactRef} />
+      <div className="project-thumbnails">
+        <h1>My Projects</h1>
+        <MyWork work={workRef} />
+      </div>
+      <div className="contact-me-section">
+        <h1>Contact Me</h1>
+        <ContactMe contact={contactRef} />
+      </div>
       <Resume resume={resumeRef} />
       <Footer />
     </div>

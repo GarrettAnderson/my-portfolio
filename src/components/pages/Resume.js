@@ -17,7 +17,7 @@ export default function Resume(props) {
   return (
     <section
       id="resume-section"
-      className="resume-container container"
+      className="resume-container"
       ref={props.resume}
     >
       <div className="row">
