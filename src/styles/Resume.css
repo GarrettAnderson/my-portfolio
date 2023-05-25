@@ -40,3 +40,8 @@
   padding: 1rem;
   margin-bottom: 2rem;
 }
+
+.resume-container button:hover {
+  background: transparent;
+  color: #303f54;
+}
