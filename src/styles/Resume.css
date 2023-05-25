@@ -14,3 +14,9 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
+.resume-container h1 {
+  background-color: #303f54;
+  color: white;
+  padding: 2rem;
+}
