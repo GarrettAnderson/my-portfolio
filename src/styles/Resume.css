@@ -29,4 +29,14 @@
 
 .resume-container svg {
   height: 5rem;
+  color: #303f54;
+}
+
+.resume-container button {
+  border-radius: 0 !important;
+  border-color: #303f54 !important;
+  background-color: #303f54;
+  color: #fff;
+  padding: 1rem;
+  margin-bottom: 2rem;
 }
