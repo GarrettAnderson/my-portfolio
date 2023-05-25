@@ -2,6 +2,7 @@
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding: 2rem;
 }
 
 .skills li {
@@ -19,4 +20,13 @@
   background-color: #303f54;
   color: white;
   padding: 2rem;
+}
+
+.resume-container li {
+  background: transparent;
+  justify-self: center;
+}
+
+.resume-container svg {
+  height: 5rem;
 }
