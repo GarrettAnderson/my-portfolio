@@ -3,7 +3,7 @@ import Project from "../Project";
 import "../../styles/Project.css";
 import bombSnifferImg from "../../assets/images/bombSnifferImg.png";
 
-export default function MyWork() {
+export default function MyWork(props) {
   const projects = [
     {
       name: "Bomb Sniffer",
@@ -57,7 +57,11 @@ export default function MyWork() {
 
   return (
     // create a map function to iterate over the projects and render the project component
-    <ol className="project-list row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    <ol
+      id="work-details"
+      // ref={props.work}
+      className="project-list row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"
+    >
       {projects.map((project, i) => {
         console.log(project);
         return (

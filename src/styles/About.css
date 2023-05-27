@@ -8,9 +8,14 @@
   width: 180px;
 }
 
-.about-container {
-  height: 60%;
-}
+/* .about-container {
+  text-align: center;
+  height: 100vh;
+  background-image: url("../assets/images/background-img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+} */
 
 .about-me h1 {
   font-family: "Ultra", serif;

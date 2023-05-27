@@ -3,8 +3,8 @@ import "../styles/Footer.css";
 
 export default function Footer() {
   return (
-    <footer className="footer-container container">
-      <p>&copy; 2022 Garrett Lee Graham Anderson</p>
+    <footer id="footer" className="footer-container">
+      <p>&copy; 2023 Garrett Lee Graham Anderson</p>
       <ol>
         <li>
           <a href="https://www.linkedin.com/in/garrettleegrahamanderson/">

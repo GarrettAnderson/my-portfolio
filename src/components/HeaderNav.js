@@ -1,18 +1,27 @@
 import React from "react";
 import "../styles/HeaderNav.css";
 
-export default function HeaderNav({ currentPage, handlePageChange }) {
+export default function HeaderNav({
+  work,
+  about,
+  home,
+  contact,
+  resume,
+  executeScroll,
+  currentPage,
+  handlePageChange,
+}) {
+  console.log(about);
   return (
     <header className="header-container">
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
-          <a
-            onClick={() => handlePageChange("About")}
+          <div
+            onClick={() => executeScroll(home)}
             className="navbar-brand nav-name"
-            href="#"
           >
             Garrett Anderson
-          </a>
+          </div>
           <button
             className="navbar-toggler"
             type="button"
@@ -26,43 +35,35 @@ export default function HeaderNav({ currentPage, handlePageChange }) {
           </button>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav nav-links">
-              <a
-                onClick={() => handlePageChange("About")}
-                className={
-                  currentPage === "About" ? "nav-link active" : "nav-link"
-                }
+              {/* <div
+                onClick={() => executeScroll(about)}
+                className={about === "About" ? "nav-link active" : "nav-link"}
                 aria-current="page"
-                href="#"
               >
                 About Me
-              </a>
-              <a
-                onClick={() => handlePageChange("MyWork")}
-                className={
-                  currentPage === "MyWork" ? "nav-link active" : "nav-link"
-                }
-                href="#"
+              </div> */}
+              <div
+                onClick={() => executeScroll(work)}
+                className={work === "MyWork" ? "nav-link active" : "nav-link"}
               >
                 My Work
-              </a>
-              <a
-                onClick={() => handlePageChange("ContactMe")}
+              </div>
+              <div
+                onClick={() => executeScroll(contact)}
                 className={
                   currentPage === "ContactMe" ? "nav-link active" : "nav-link"
                 }
-                href="#"
               >
                 Contact Me
-              </a>
-              <a
-                onClick={() => handlePageChange("Resume")}
+              </div>
+              <div
+                onClick={() => executeScroll(resume)}
                 className={
                   currentPage === "Resume" ? "nav-link active" : "nav-link"
                 }
-                href="#"
               >
                 Resume
-              </a>
+              </div>
             </div>
           </div>
         </div>
