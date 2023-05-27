@@ -35,13 +35,13 @@ export default function HeaderNav({
           </button>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav nav-links">
-              <div
+              {/* <div
                 onClick={() => executeScroll(about)}
                 className={about === "About" ? "nav-link active" : "nav-link"}
                 aria-current="page"
               >
                 About Me
-              </div>
+              </div> */}
               <div
                 onClick={() => executeScroll(work)}
                 className={work === "MyWork" ? "nav-link active" : "nav-link"}

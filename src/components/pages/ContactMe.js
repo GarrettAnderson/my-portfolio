@@ -30,7 +30,6 @@ export default function ContactMe(props) {
       id="contact-form"
       className="needs-validation"
       onSubmit={handleSubmit(onSubmit)}
-      ref={props.contact}
     >
       <div className="row">
         <div className="col">

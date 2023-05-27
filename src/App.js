@@ -42,13 +42,13 @@ function App() {
         />
         <About about={aboutRef} />
       </div>
-      <div className="project-thumbnails">
+      <div className="project-thumbnails" ref={workRef}>
         <h1>My Projects</h1>
-        <MyWork work={workRef} />
+        <MyWork />
       </div>
-      <div className="contact-me-section">
+      <div className="contact-me-section" ref={contactRef}>
         <h1>Contact Me</h1>
-        <ContactMe contact={contactRef} />
+        <ContactMe />
       </div>
       <Resume resume={resumeRef} />
       <Footer />

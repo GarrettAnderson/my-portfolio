@@ -59,7 +59,7 @@ export default function MyWork(props) {
     // create a map function to iterate over the projects and render the project component
     <ol
       id="work-details"
-      ref={props.work}
+      // ref={props.work}
       className="project-list row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"
     >
       {projects.map((project, i) => {
