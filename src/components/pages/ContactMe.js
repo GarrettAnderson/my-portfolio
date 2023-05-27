@@ -81,7 +81,7 @@ export default function ContactMe(props) {
         {/* <button className="btn btn-primary" type="submit">
           Contact Me
         </button> */}
-        <input type="submit" />
+        <input type="submit" class="submit-btn" />
       </div>
       <Tooltip id="my-tooltip" />
     </form>
