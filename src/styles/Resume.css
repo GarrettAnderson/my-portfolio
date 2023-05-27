@@ -45,3 +45,7 @@
   background: transparent;
   color: #303f54;
 }
+
+.resume-container h1 {
+  font-family: "Ultra", serif;
+}
