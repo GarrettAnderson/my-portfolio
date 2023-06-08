@@ -77,7 +77,7 @@ export default function ContactMe(props) {
           required
         ></textarea>
       </div>
-      <div className="col-12">
+      <div className="col-12 submit-btn-container">
         {/* <button className="btn btn-primary" type="submit">
           Contact Me
         </button> */}

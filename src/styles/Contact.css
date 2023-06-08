@@ -6,6 +6,10 @@
   padding: 1rem;
 }
 
+.submit-btn-container {
+  text-align: center;
+}
+
 .submit-btn {
   border-radius: 0 !important;
   border-color: #303f54 !important;
@@ -13,7 +17,6 @@
   color: #fff;
   padding: 1rem;
   margin-bottom: 2rem;
-  text-align: center;
 }
 
 .submit-btn:hover {
