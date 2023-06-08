@@ -27,6 +27,13 @@
   font-family: "Ultra", serif;
 }
 
+.contact-me-section {
+  background-image: url("./assets/images/blurry_flowers.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 .contact-me-section h1 {
   background-color: #303f54;
   color: white;
