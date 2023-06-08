@@ -23,7 +23,7 @@ export default function HeaderNav({
             Garrett Anderson
           </div>
           <button
-            className="navbar-toggler"
+            className="navbar-toggler navbar-dark hamburger-nav"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNavAltMarkup"

@@ -8,6 +8,11 @@
 
 .nav-name {
   font-family: "Ultra", serif;
+  color: #fff !important;
+}
+
+.nav-link {
+  color: #fff !important;
 }
 
 .nav-links a {

@@ -6,7 +6,7 @@ export default function About(props) {
   return (
     <main id="about-container" className="about-container" ref={props.about}>
       <div className="row-container">
-        <section className="row align-itens-center justify-content-center text-center">
+        <section className="row align-items-center justify-content-center text-center">
           <section id="about-me" className="headshot col-12">
             <img
               src={headshot}

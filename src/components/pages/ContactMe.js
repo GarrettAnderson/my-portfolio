@@ -54,9 +54,9 @@ export default function ContactMe(props) {
         </div>
       </div>
       <div className="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">
+        {/* <label for="exampleFormControlInput1" class="form-label">
           Email address
-        </label>
+        </label> */}
         <input
           type="email"
           className="form-control"
@@ -66,13 +66,14 @@ export default function ContactMe(props) {
         />
       </div>
       <div className="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">
+        {/* <label for="exampleFormControlTextarea1" class="form-label">
           Example textarea
-        </label>
+        </label> */}
         <textarea
           className="form-control"
           id="exampleFormControlTextarea1"
           rows="3"
+          placeholder="Your Message"
           required
         ></textarea>
       </div>
