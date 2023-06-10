@@ -62,7 +62,7 @@ export default function HeaderNav({
                   currentPage === "Resume" ? "nav-link active" : "nav-link"
                 }
               >
-                Resume
+                Skills
               </div>
             </div>
           </div>
