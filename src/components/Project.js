@@ -15,6 +15,18 @@ export default function Project(props) {
           <div className="card-body">
             <h5 className="card-title">{props.name}</h5>
             <p className="card-text">{props.desc}</p>
+            <ol>
+              <li>
+                <a href={props.githubUrl}>
+                  <button>Github</button>
+                </a>
+              </li>
+              <li>
+                <a href={props.liveUrl}>
+                  <button>Live Site</button>
+                </a>
+              </li>
+            </ol>
           </div>
         </figure>
       </div>
