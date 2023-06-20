@@ -74,7 +74,7 @@
 
 @media only screen and (max-width: 600px) {
   .Hero-Bkgrnd {
-    background-position: 100% 160%;
+    background-position: 100%;
     background-attachment: unset;
   }
 
