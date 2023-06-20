@@ -71,3 +71,17 @@
     transform: rotate(360deg);
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .Hero-Bkgrnd {
+    background-attachment: unset;
+  }
+
+  .project-thumbnails {
+    background-attachment: unset;
+  }
+
+  .contact-me-section {
+    background-attachment: unset;
+  }
+}
