@@ -15,7 +15,7 @@ export default function Project(props) {
           <div className="card-body">
             <h5 className="card-title">{props.name}</h5>
             <p className="card-text">{props.desc}</p>
-            <ol>
+            <ol class="project-link-btn">
               <li>
                 <a href={props.githubUrl}>
                   <button>Github</button>

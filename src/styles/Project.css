@@ -4,3 +4,26 @@
   margin: 0 auto !important;
   width: 90%;
 }
+
+.project-link-btn {
+  list-style: none;
+  padding-left: 0;
+}
+
+.project-link-btn li {
+  text-align: center;
+}
+
+.project-link-btn button {
+  border-radius: 0 !important;
+  border-color: #303f54 !important;
+  background-color: #303f54;
+  color: #fff;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.project-link-btn button:hover {
+  background: transparent;
+  color: #303f54;
+}
