@@ -17,12 +17,12 @@ export default function Project(props) {
             <p className="card-text">{props.desc}</p>
             <ol class="project-link-btn">
               <li>
-                <a href={props.githubUrl}>
+                <a href={props.githubUrl} target="_blank">
                   <button>Github</button>
                 </a>
               </li>
               <li>
-                <a href={props.liveUrl}>
+                <a href={props.liveUrl} target="_blank">
                   <button>Live Site</button>
                 </a>
               </li>

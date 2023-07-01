@@ -25,4 +25,6 @@
 
 .about-me p {
   font-family: "PT Serif", serif;
+  max-width: 36rem;
+  margin: 0 auto;
 }
