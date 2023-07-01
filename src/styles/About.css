@@ -21,6 +21,8 @@
 
 .about-me h1 {
   font-family: "Ultra", serif;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 .about-me p {
