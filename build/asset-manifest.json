@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.5e169fa3.css",
-    "main.js": "/my-portfolio/static/js/main.1233aa23.js",
+    "main.css": "/my-portfolio/static/css/main.78c5d278.css",
+    "main.js": "/my-portfolio/static/js/main.03a1240b.js",
     "static/media/background-img.jpg": "/my-portfolio/static/media/background-img.525abd0d77299b7fc799.jpg",
     "static/media/pink-bkgrnd.jpg": "/my-portfolio/static/media/pink-bkgrnd.5213a7d5a325d88fe749.jpg",
     "static/media/white-bkgrnd.jpg": "/my-portfolio/static/media/white-bkgrnd.e93f2398aa84ff6e5633.jpg",
@@ -12,15 +12,15 @@
     "static/media/cropHeadShot.png": "/my-portfolio/static/media/cropHeadShot.f779d3183c6550fdb8c5.png",
     "static/media/tech-blog-screenshot.png": "/my-portfolio/static/media/tech-blog-screenshot.3c378747070d7ca1bbab.png",
     "static/media/bootlegspotify.png": "/my-portfolio/static/media/bootlegspotify.1e21f08b112f5c07b80c.png",
-    "static/media/GarrettAndersonResume2023.pdf": "/my-portfolio/static/media/GarrettAndersonResume2023.c0775bfaa2b3d0447c5e.pdf",
+    "static/media/GarrettAndersonResume2023.pdf": "/my-portfolio/static/media/GarrettAndersonResume2023.16e4ba2b4227af0d08c1.pdf",
     "static/media/gamersgauntlet.png": "/my-portfolio/static/media/gamersgauntlet.0a03163ed7f9148fd9a4.png",
     "static/media/logo.svg": "/my-portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/my-portfolio/index.html",
-    "main.5e169fa3.css.map": "/my-portfolio/static/css/main.5e169fa3.css.map",
-    "main.1233aa23.js.map": "/my-portfolio/static/js/main.1233aa23.js.map"
+    "main.78c5d278.css.map": "/my-portfolio/static/css/main.78c5d278.css.map",
+    "main.03a1240b.js.map": "/my-portfolio/static/js/main.03a1240b.js.map"
   },
   "entrypoints": [
-    "static/css/main.5e169fa3.css",
-    "static/js/main.1233aa23.js"
+    "static/css/main.78c5d278.css",
+    "static/js/main.03a1240b.js"
   ]
 }
