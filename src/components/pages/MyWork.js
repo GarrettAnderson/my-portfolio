@@ -21,14 +21,14 @@ export default function MyWork(props) {
       githubUrl: "https://github.com/GarrettAnderson/Bootleg-Spotify",
       hasGit: true,
     },
-    // {
-    //   name: "Gamer's Gauntlet",
-    //   image: "gamersgauntlet.png",
-    //   desc: "This is a full-stack project that quizes the user on various questions.",
-    //   liveUrl: "https://powerful-inlet-74359.herokuapp.com/",
-    //   githubUrl: "https://github.com/GarrettAnderson/gamers-gauntlet",
-    //   hasGit: true,
-    // },
+    {
+      name: "Gamer's Gauntlet",
+      image: "gamersgauntlet.png",
+      desc: "This is a full-stack project that quizes the user on various questions.",
+      liveUrl: "https://powerful-inlet-74359.herokuapp.com/",
+      githubUrl: "https://github.com/GarrettAnderson/gamers-gauntlet",
+      hasGit: true,
+    },
     {
       name: "Weather App",
       image: "weather-app-screenshot.png",
@@ -37,22 +37,22 @@ export default function MyWork(props) {
       githubUrl: "https://github.com/GarrettAnderson/weather-app",
       hasGit: true,
     },
-    // {
-    //   name: "Tech Blog",
-    //   image: "tech-blog-screenshot.png",
-    //   desc: "This is a full stack project that allows a user to create, read, update and delete a blog post.",
-    //   liveUrl: "https://salty-reaches-84386.herokuapp.com/",
-    //   githubUrl: "https://github.com/GarrettAnderson/tech-blog",
-    //   hasGit: true,
-    // },
-    // {
-    // name: "React Gamer's Gauntlet",
-    // image: "gamersgauntletreact.png",
-    // desc: "This is a project is a Reactified Gamer's Gauntlet while using Mongodb and GraphQL.",
-    // liveUrl: "https://calm-anchorage-14292.herokuapp.com/",
-    // githubUrl: "https://github.com/GarrettAnderson/react-gamers-gauntlet",
-    // hasGit: true,
-    // },
+    {
+      name: "Tech Blog",
+      image: "tech-blog-screenshot.png",
+      desc: "This is a full stack project that allows a user to create, read, update and delete a blog post.",
+      liveUrl: "https://salty-reaches-84386.herokuapp.com/",
+      githubUrl: "https://github.com/GarrettAnderson/tech-blog",
+      hasGit: true,
+    },
+    {
+      name: "React Gamer's Gauntlet",
+      image: "gamersgauntletreact.png",
+      desc: "This is a project is a Reactified Gamer's Gauntlet while using Mongodb and GraphQL.",
+      liveUrl: "https://calm-anchorage-14292.herokuapp.com/",
+      githubUrl: "https://github.com/GarrettAnderson/react-gamers-gauntlet",
+      hasGit: true,
+    },
   ];
 
   return (

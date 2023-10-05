@@ -21,11 +21,11 @@ export default function Project(props) {
                   <button>Github</button>
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a href={props.liveUrl} target="_blank">
                   <button>Live Site</button>
                 </a>
-              </li>
+              </li> */}
             </ol>
           </div>
         </figure>
