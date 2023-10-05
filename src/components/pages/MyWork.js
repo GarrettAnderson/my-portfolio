@@ -45,14 +45,14 @@ export default function MyWork(props) {
       githubUrl: "https://github.com/GarrettAnderson/tech-blog",
       hasGit: true,
     },
-    {
-      name: "React Gamer's Gauntlet",
-      image: "gamersgauntletreact.png",
-      desc: "This is a project is a Reactified Gamer's Gauntlet while using Mongodb and GraphQL.",
-      liveUrl: "https://calm-anchorage-14292.herokuapp.com/",
-      githubUrl: "https://github.com/GarrettAnderson/react-gamers-gauntlet",
-      hasGit: true,
-    },
+    // {
+    // name: "React Gamer's Gauntlet",
+    // image: "gamersgauntletreact.png",
+    // desc: "This is a project is a Reactified Gamer's Gauntlet while using Mongodb and GraphQL.",
+    // liveUrl: "https://calm-anchorage-14292.herokuapp.com/",
+    // githubUrl: "https://github.com/GarrettAnderson/react-gamers-gauntlet",
+    // hasGit: true,
+    // },
   ];
 
   return (
