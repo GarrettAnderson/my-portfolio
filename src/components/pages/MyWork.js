@@ -14,11 +14,11 @@ export default function MyWork(props) {
       hasGit: true,
     },
     {
-      name: "Bootleg Spotify",
-      image: "bootlegspotify.png",
-      desc: "This is a front-end project using an two APIs to retrieve artist albums and playlist.",
-      liveUrl: "https://garrettanderson.github.io/Bootleg-Spotify/",
-      githubUrl: "https://github.com/GarrettAnderson/Bootleg-Spotify",
+      name: "Kash Tech Operations Portal",
+      image: "KOPortalHome.png",
+      desc: "This is a full-stack operations portal built to track employee and client information such as employee timesheets along with client companies and their projects. I built the front-end with ReactJS and managed API configurations that connected to a SQL backend.",
+      liveUrl: "http://20.62.40.96:3000/",
+      githubUrl: "https://github.com/GarrettAnderson/kash-tech",
       hasGit: true,
     },
     {
